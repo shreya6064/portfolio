@@ -1,0 +1,74 @@
+body {
+    font-family: 'Playfair Display', serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #161616;
+}
+
+header {
+    text-align: center;
+    padding: 50px 0;
+    /*background-color: #0f0f0f;*/
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    font-family: 'Playfair Display', serif;
+}
+
+h1 {
+    font-size: 4.5em;
+    margin: 0;
+    color: #ffffff;
+}
+
+h2 {
+    font-size: 2.5em;
+    margin: 10px 0 0 0;
+    color: #dddddd;
+}
+
+main {
+    display: flex;
+    flex-direction: column; /* Add this line */
+    align-items: center;    /* This centers the sections horizontally */
+    /*justify-content: space-between;*/
+    padding: 50px 15%;
+    /*background-color: #0f0f0f;*/
+}
+
+.portfolio-section {
+    flex: 1;
+    margin: 0 20px;
+    background-color: #0e0e0e;
+    padding: 20px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; /* Added rounded corners */
+}
+
+h3 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #e9e9e9;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+
+
+    border-radius: 10px;  /* Rounded corners for the grid */
+    overflow: hidden;  /* This ensures inner content also adheres to the border-radius */
+    padding: 10px;  /* Padding ensures the inner images don't touch the edge */
+}
+
+.grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.grid img:hover {
+    transform: scale(1.05);
+}
