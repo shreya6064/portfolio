@@ -44,6 +44,20 @@ main {
     border-radius: 10px; /* Added rounded corners */
 }
 
+/* Adjust for tablets (typical iPad landscape and portrait resolutions as of my last update are considered here) */
+@media (min-width: 600px) and (max-width: 1024px) { 
+    .portfolio-section {
+        padding: 10px;  /* Adjust this value based on your preference for iPad */
+    }
+}
+
+/* Adjust for phones */
+@media (max-width: 599px) {
+    .portfolio-section {
+        padding: 5px;  /* Adjust this value based on your preference for phones */
+    }
+}
+
 h3 {
     text-align: center;
     font-size: 2em;
@@ -53,13 +67,20 @@ h3 {
 
 .grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 
 
     border-radius: 10px;  /* Rounded corners for the grid */
     overflow: hidden;  /* This ensures inner content also adheres to the border-radius */
     padding: 10px;  /* Padding ensures the inner images don't touch the edge */
+}
+
+/* Use a media query to adjust for larger screens */
+@media (min-width: 768px) { /* This is a common breakpoint for tablets and above */
+    .grid {
+        grid-template-columns: repeat(3, 1fr); /* Adjust to 3 columns for larger screens */
+    }
 }
 
 .grid img {
