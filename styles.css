@@ -31,7 +31,7 @@ main {
     flex-direction: column; /* Add this line */
     align-items: center;    /* This centers the sections horizontally */
     /*justify-content: space-between;*/
-    padding: 50px 15%;
+    padding: 30px 15%;
     /*background-color: #0f0f0f;*/
 }
 
@@ -42,21 +42,26 @@ main {
     padding: 20px;
     box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
     border-radius: 10px; /* Added rounded corners */
+
+    max-width: 100%;  /* This is the default width for laptops. Adjust as needed. */
+    width: 100%;  /* This ensures the section takes the full width up to the max-width limit */
 }
 
-/* Adjust for tablets (typical iPad landscape and portrait resolutions as of my last update are considered here) */
+/* Adjust width for tablets (typical iPad landscape and portrait resolutions) */
 @media (min-width: 600px) and (max-width: 1024px) { 
     .portfolio-section {
-        padding: 10px;  /* Adjust this value based on your preference for iPad */
+        max-width: 90%;  /* Adjust this value based on your preference for iPad */
     }
 }
 
-/* Adjust for phones */
+/* Adjust width for phones */
 @media (max-width: 599px) {
     .portfolio-section {
-        padding: 5px;  /* Adjust this value based on your preference for phones */
+        max-width: 99%;  /* Adjust this value based on your preference for phones. Making it 95% gives a small margin on the sides. */
     }
 }
+
+
 
 h3 {
     text-align: center;
