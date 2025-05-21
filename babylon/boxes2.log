@@ -1,0 +1,263 @@
+Exporter version: 3.3.1, Blender version: 3.6.1
+========= Conversion from Blender to Babylon.js =========
+	Scene settings used :
+		Inline textures     :  false
+		Material Type       :  PBR
+		Positions Precision :  4
+		Normals Precision   :  3
+		UVs Precision       :  3
+		Vert Color Precision:  3
+		Mat Weight Precision:  2
+		Keep Z-up r-handed  :  no
+		Texture directory   :  C:\Work\Projects_2024\Portfolio_Website_Oct2024\babylon\
+			processing env texture environment.env
+	Python World class constructor completed
+	WARNING: No active camera has been assigned, or is not in a currently enabled collection
+	processing begun of mesh:  Cube
+		processing begun of material:  Material
+		num positions      :  323
+		num normals        :  323
+		num tangents       :  0
+		num uvs            :  646
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  428
+	processing begun of mesh:  Cube.001
+		processing begun of material:  Material
+		registered as also a user of material:  Material
+		num positions      :  323
+		num normals        :  323
+		num tangents       :  0
+		num uvs            :  646
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  428
+	processing begun of mesh:  Cube.002
+		processing begun of material:  Material
+		registered as also a user of material:  Material
+		num positions      :  323
+		num normals        :  323
+		num tangents       :  0
+		num uvs            :  646
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  428
+	processing begun of node:  Empty
+	processing begun of mesh:  Collider
+		processing begun of material:  Material
+		registered as also a user of material:  Material
+		num positions      :  29
+		num normals        :  29
+		num tangents       :  0
+		num uvs            :  58
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  12
+	processing begun of mesh:  Cube.004
+		processing begun of material:  Material.001
+			processing texture test5
+		num positions      :  96
+		num normals        :  96
+		num tangents       :  0
+		num uvs            :  192
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  108
+	processing begun of mesh:  Cube.005
+		processing begun of material:  Material
+		registered as also a user of material:  Material
+		num positions      :  323
+		num normals        :  323
+		num tangents       :  0
+		num uvs            :  646
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  428
+	processing begun of node:  pointer
+	processing begun of mesh:  Cube.003
+		processing begun of material:  Material
+		registered as also a user of material:  Material
+		num positions      :  323
+		num normals        :  323
+		num tangents       :  0
+		num uvs            :  646
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  428
+	processing begun of mesh:  Cube.006
+		processing begun of material:  Material
+		registered as also a user of material:  Material
+		num positions      :  244
+		num normals        :  244
+		num tangents       :  0
+		num uvs            :  488
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  300
+	processing begun of mesh:  Cube.007
+		processing begun of material:  Material
+		registered as also a user of material:  Material
+		num positions      :  244
+		num normals        :  244
+		num tangents       :  0
+		num uvs            :  488
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  300
+	processing begun of mesh:  Cube.008
+		processing begun of material:  Material
+		registered as also a user of material:  Material
+		num positions      :  244
+		num normals        :  244
+		num tangents       :  0
+		num uvs            :  488
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  300
+	processing begun of mesh:  Plane
+		processing begun of material:  White??
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  Plane.001
+		processing begun of material:  White??
+		registered as also a user of material:  White??
+		Custom split normals with tangents being used
+		num positions      :  273
+		num normals        :  273
+		num tangents       :  1092
+		num uvs            :  546
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  108
+	processing begun of mesh:  wall1
+		processing begun of material:  Material
+		registered as also a user of material:  Material
+		num positions      :  30
+		num normals        :  30
+		num tangents       :  0
+		num uvs            :  60
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  12
+	processing begun of mesh:  wall2
+		processing begun of material:  Material
+		registered as also a user of material:  Material
+		num positions      :  30
+		num normals        :  30
+		num tangents       :  0
+		num uvs            :  60
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  12
+	processing begun of mesh:  wall3
+		processing begun of material:  Material
+		registered as also a user of material:  Material
+		num positions      :  31
+		num normals        :  31
+		num tangents       :  0
+		num uvs            :  62
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  12
+	processing begun of mesh:  wall4
+		processing begun of material:  Material
+		registered as also a user of material:  Material
+		num positions      :  31
+		num normals        :  31
+		num tangents       :  0
+		num uvs            :  62
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  12
+	processing begun of mesh:  text
+		processing begun of material:  Material
+		registered as also a user of material:  Material
+		num positions      :  7202
+		num normals        :  7202
+		num tangents       :  0
+		num uvs            :  0
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  7167
+	processing begun of mesh:  text.001
+		processing begun of material:  white
+		num positions      :  1237
+		num normals        :  1237
+		num tangents       :  0
+		num uvs            :  0
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  1234
+	processing begun of mesh:  text.002
+		processing begun of material:  Material
+		registered as also a user of material:  Material
+		num positions      :  10471
+		num normals        :  10471
+		num tangents       :  0
+		num uvs            :  0
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  10426
+	processing begun of mesh:  text.003
+		processing begun of material:  Material
+		registered as also a user of material:  Material
+		num positions      :  2279
+		num normals        :  2279
+		num tangents       :  0
+		num uvs            :  0
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2274
+	processing begun of mesh:  text.004
+		processing begun of material:  Material
+		registered as also a user of material:  Material
+		num positions      :  61807
+		num normals        :  61807
+		num tangents       :  0
+		num uvs            :  0
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  61552
+		WARNING: # of 0 area faces found:  26
+	processing begun of mesh:  text.005
+		processing begun of material:  white
+		registered as also a user of material:  white
+		num positions      :  1237
+		num normals        :  1237
+		num tangents       :  0
+		num uvs            :  0
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  1234
+	processing begun of light (POINT):  Point
+========= Writing of JSON file started =========
+	writing mesh:  Cube
+	writing mesh:  Cube.001
+	writing mesh:  Cube.002
+	writing mesh:  Collider
+	writing mesh:  Cube.004
+	writing mesh:  Cube.005
+	writing mesh:  Cube.003
+	writing mesh:  Cube.006
+	writing mesh:  Cube.007
+	writing mesh:  Cube.008
+	writing mesh:  Plane
+	writing mesh:  Plane.001
+	writing mesh:  wall1
+	writing mesh:  wall2
+	writing mesh:  wall3
+	writing mesh:  wall4
+	writing mesh:  text
+	writing mesh:  text.001
+	writing mesh:  text.002
+	writing mesh:  text.003
+	writing mesh:  text.004
+	writing mesh:  text.005
+========= Writing of JSON file completed =========
+========= end of processing =========
+elapsed time:  0 min, 3.6938 secs

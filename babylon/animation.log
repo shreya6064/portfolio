@@ -1,0 +1,186 @@
+Exporter version: 3.3.1, Blender version: 3.6.1
+========= Conversion from Blender to Babylon.js =========
+	Scene settings used :
+		Inline textures     :  false
+		Material Type       :  PBR
+		Positions Precision :  4
+		Normals Precision   :  3
+		UVs Precision       :  3
+		Vert Color Precision:  3
+		Mat Weight Precision:  2
+		Keep Z-up r-handed  :  no
+		Texture directory   :  C:\Work\Projects_2024\Portfolio_Website_Oct2024\babylon\
+	Python World class constructor completed
+	WARNING: No active camera has been assigned, or is not in a currently enabled collection
+	processing begun of mesh:  strall_video_tv
+		processing begun of material:  Videos
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  text
+		processing begun of material:  text_main
+		num positions      :  3212
+		num normals        :  3212
+		num tangents       :  0
+		num uvs            :  0
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  3197
+	processing begun of mesh:  text.001
+		processing begun of material:  text_main
+		registered as also a user of material:  text_main
+		num positions      :  4958
+		num normals        :  4958
+		num tangents       :  0
+		num uvs            :  0
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  4946
+		WARNING: # of 0 area faces found:  2
+	processing begun of mesh:  text.002
+		processing begun of material:  text_main
+		registered as also a user of material:  text_main
+		num positions      :  5340
+		num normals        :  5340
+		num tangents       :  0
+		num uvs            :  0
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  5320
+	processing begun of mesh:  text.003
+		processing begun of material:  text_main
+		registered as also a user of material:  text_main
+		num positions      :  28084
+		num normals        :  28084
+		num tangents       :  0
+		num uvs            :  0
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  27981
+		WARNING: # of 0 area faces found:  14
+	processing begun of mesh:  text.004
+		processing begun of material:  text_main
+		registered as also a user of material:  text_main
+		num positions      :  16586
+		num normals        :  16586
+		num tangents       :  0
+		num uvs            :  0
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  16541
+		WARNING: # of 0 area faces found:  4
+	processing begun of mesh:  text.005
+		processing begun of material:  text_main
+		registered as also a user of material:  text_main
+		num positions      :  14755
+		num normals        :  14755
+		num tangents       :  0
+		num uvs            :  0
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  14705
+		WARNING: # of 0 area faces found:  15
+	processing begun of mesh:  Plane.001
+		processing begun of material:  Shelves
+		Custom split normals with tangents being used
+		num positions      :  271
+		num normals        :  271
+		num tangents       :  1084
+		num uvs            :  542
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  108
+	processing begun of mesh:  Plane.002
+		processing begun of material:  Shelves
+		registered as also a user of material:  Shelves
+		Custom split normals with tangents being used
+		num positions      :  271
+		num normals        :  271
+		num tangents       :  1084
+		num uvs            :  542
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  108
+	processing begun of mesh:  wall.001
+		processing begun of material:  idek.001
+		Custom split normals with tangents being used
+		num positions      :  329
+		num normals        :  329
+		num tangents       :  1316
+		num uvs            :  658
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  148
+	processing begun of mesh:  Plane.003
+		processing begun of material:  White
+		Custom split normals with tangents being used
+		num positions      :  286
+		num normals        :  286
+		num tangents       :  1144
+		num uvs            :  572
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  188
+	processing begun of mesh:  plant_growing_tv
+		processing begun of material:  Videos
+		registered as also a user of material:  Videos
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  strawberry_tart_tv
+		processing begun of material:  Videos
+		registered as also a user of material:  Videos
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  strawberry_tart_workbench_tv
+		processing begun of material:  Videos
+		registered as also a user of material:  Videos
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  plant_growing_workbench_tv
+		processing begun of material:  Videos
+		registered as also a user of material:  Videos
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+========= Writing of JSON file started =========
+	writing mesh:  strall_video_tv
+	writing mesh:  text
+	writing mesh:  text.001
+	writing mesh:  text.002
+	writing mesh:  text.003
+	writing mesh:  text.004
+	writing mesh:  text.005
+	writing mesh:  Plane.001
+	writing mesh:  Plane.002
+	writing mesh:  wall.001
+	writing mesh:  Plane.003
+	writing mesh:  plant_growing_tv
+	writing mesh:  strawberry_tart_tv
+	writing mesh:  strawberry_tart_workbench_tv
+	writing mesh:  plant_growing_workbench_tv
+========= Writing of JSON file completed =========
+========= end of processing =========
+elapsed time:  0 min, 3.509 secs

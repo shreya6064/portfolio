@@ -1,0 +1,623 @@
+Exporter version: 3.3.1, Blender version: 3.6.1
+========= Conversion from Blender to Babylon.js =========
+	Scene settings used :
+		Inline textures     :  false
+		Material Type       :  PBR
+		Positions Precision :  4
+		Normals Precision   :  3
+		UVs Precision       :  3
+		Vert Color Precision:  3
+		Mat Weight Precision:  2
+		Keep Z-up r-handed  :  no
+		Texture directory   :  C:\Work\Projects_2024\Portfolio_Website_Oct2024\babylon\
+			processing env texture lysGenerated_noon.env
+	Python World class constructor completed
+	WARNING: No active camera has been assigned, or is not in a currently enabled collection
+	processing begun of node:  Empty
+	processing begun of mesh:  Collider
+		processing begun of material:  text_main
+		num positions      :  29
+		num normals        :  29
+		num tangents       :  0
+		num uvs            :  58
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  12
+	processing begun of mesh:  Cube.006
+		processing begun of material:  White??
+		num positions      :  244
+		num normals        :  244
+		num tangents       :  0
+		num uvs            :  488
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  300
+	processing begun of mesh:  Cube.007
+		processing begun of material:  White??
+		registered as also a user of material:  White??
+		Custom split normals with tangents being used
+		num positions      :  334
+		num normals        :  334
+		num tangents       :  1336
+		num uvs            :  668
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  300
+	processing begun of mesh:  Cube.008
+		processing begun of material:  White??
+		registered as also a user of material:  White??
+		num positions      :  244
+		num normals        :  244
+		num tangents       :  0
+		num uvs            :  488
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  300
+	processing begun of mesh:  Plane
+		processing begun of material:  Shelves
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  wall
+		processing begun of material:  idek
+		Custom split normals with tangents being used
+		num positions      :  580
+		num normals        :  580
+		num tangents       :  2320
+		num uvs            :  1160
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  572
+	processing begun of mesh:  wall1
+		processing begun of material:  text_main
+		registered as also a user of material:  text_main
+		num positions      :  30
+		num normals        :  30
+		num tangents       :  0
+		num uvs            :  60
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  12
+	processing begun of mesh:  wall2
+		processing begun of material:  text_main
+		registered as also a user of material:  text_main
+		num positions      :  30
+		num normals        :  30
+		num tangents       :  0
+		num uvs            :  60
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  12
+	processing begun of mesh:  wall3
+		processing begun of material:  text_main
+		registered as also a user of material:  text_main
+		num positions      :  31
+		num normals        :  31
+		num tangents       :  0
+		num uvs            :  62
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  12
+	processing begun of mesh:  wall4
+		processing begun of material:  text_main
+		registered as also a user of material:  text_main
+		num positions      :  31
+		num normals        :  31
+		num tangents       :  0
+		num uvs            :  62
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  12
+	processing begun of mesh:  text
+		processing begun of material:  text_main
+		registered as also a user of material:  text_main
+		num positions      :  7202
+		num normals        :  7202
+		num tangents       :  0
+		num uvs            :  0
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  7167
+	processing begun of mesh:  text.005
+		processing begun of material:  Text Colour
+		num positions      :  6538
+		num normals        :  6538
+		num tangents       :  0
+		num uvs            :  0
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  6517
+		WARNING: # of 0 area faces found:  1
+	processing begun of mesh:  text.006
+		processing begun of material:  Text Colour
+		registered as also a user of material:  Text Colour
+		num positions      :  6594
+		num normals        :  6594
+		num tangents       :  0
+		num uvs            :  0
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  6577
+		WARNING: # of 0 area faces found:  1
+	processing begun of mesh:  text.007
+		processing begun of material:  Text Colour
+		registered as also a user of material:  Text Colour
+		num positions      :  5290
+		num normals        :  5290
+		num tangents       :  0
+		num uvs            :  0
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  5270
+		WARNING: # of 0 area faces found:  1
+	processing begun of mesh:  text.004
+		processing begun of material:  text_main
+		registered as also a user of material:  text_main
+		num positions      :  52115
+		num normals        :  52115
+		num tangents       :  0
+		num uvs            :  0
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  51917
+		WARNING: # of 0 area faces found:  14
+	processing begun of mesh:  text.008
+		processing begun of material:  text_main
+		registered as also a user of material:  text_main
+		num positions      :  5145
+		num normals        :  5145
+		num tangents       :  0
+		num uvs            :  0
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  5123
+	processing begun of mesh:  text.011
+		processing begun of material:  text_main
+		registered as also a user of material:  text_main
+		num positions      :  10083
+		num normals        :  10083
+		num tangents       :  0
+		num uvs            :  0
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  10048
+	processing begun of mesh:  text.012
+		processing begun of material:  text_main
+		registered as also a user of material:  text_main
+		num positions      :  9658
+		num normals        :  9658
+		num tangents       :  0
+		num uvs            :  0
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  9627
+		WARNING: # of 0 area faces found:  2
+	processing begun of mesh:  text.013
+		processing begun of material:  text_main
+		registered as also a user of material:  text_main
+		num positions      :  15537
+		num normals        :  15537
+		num tangents       :  0
+		num uvs            :  0
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  15460
+		WARNING: # of 0 area faces found:  4
+	processing begun of mesh:  text.014
+		processing begun of material:  text_main
+		registered as also a user of material:  text_main
+		num positions      :  8603
+		num normals        :  8603
+		num tangents       :  0
+		num uvs            :  0
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  8573
+		WARNING: # of 0 area faces found:  5
+	processing begun of mesh:  text.009
+		processing begun of material:  text_main
+		registered as also a user of material:  text_main
+		num positions      :  40956
+		num normals        :  40956
+		num tangents       :  0
+		num uvs            :  0
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  40823
+		WARNING: # of 0 area faces found:  5
+	processing begun of mesh:  text.015
+		processing begun of material:  text_main
+		registered as also a user of material:  text_main
+		num positions      :  42039
+		num normals        :  42039
+		num tangents       :  0
+		num uvs            :  0
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  41867
+		WARNING: # of 0 area faces found:  5
+	processing begun of mesh:  text.016
+		processing begun of material:  text_main
+		registered as also a user of material:  text_main
+		num positions      :  50459
+		num normals        :  50459
+		num tangents       :  0
+		num uvs            :  0
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  50254
+		WARNING: # of 0 area faces found:  9
+	processing begun of mesh:  Plane.001
+		processing begun of material:  Shelves
+		registered as also a user of material:  Shelves
+		Custom split normals with tangents being used
+		num positions      :  262
+		num normals        :  262
+		num tangents       :  1048
+		num uvs            :  524
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  108
+	processing begun of mesh:  Plane.002
+		processing begun of material:  Shelves
+		registered as also a user of material:  Shelves
+		Custom split normals with tangents being used
+		num positions      :  271
+		num normals        :  271
+		num tangents       :  1084
+		num uvs            :  542
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  108
+	processing begun of mesh:  Plane.003
+		processing begun of material:  Shelves
+		registered as also a user of material:  Shelves
+		Custom split normals with tangents being used
+		num positions      :  271
+		num normals        :  271
+		num tangents       :  1084
+		num uvs            :  542
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  108
+	processing begun of mesh:  Plane.004
+		processing begun of material:  Shelves
+		registered as also a user of material:  Shelves
+		Custom split normals with tangents being used
+		num positions      :  271
+		num normals        :  271
+		num tangents       :  1084
+		num uvs            :  542
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  108
+	processing begun of mesh:  Plane.005
+		processing begun of material:  Shelves
+		registered as also a user of material:  Shelves
+		Custom split normals with tangents being used
+		num positions      :  271
+		num normals        :  271
+		num tangents       :  1084
+		num uvs            :  542
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  108
+	processing begun of mesh:  creokala_tv
+		processing begun of material:  Videos
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  vjti_tv
+		processing begun of material:  Videos
+		registered as also a user of material:  Videos
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  vjti_1
+		processing begun of material:  vjti_1
+			WARNING: unsupported node type(ShaderNodeHueSaturation) will trigger baking
+			processing texture vjti_1
+			Baking texture, type: EMIT, mapped using: UVMap
+			processing texture vjti_1_baked_EMIT
+			emissive channel baked
+			bake time:  0 min, 3.4349 secs
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  vjti_2
+		processing begun of material:  vjti_2
+			processing texture vjti_2
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  vjti_3
+		processing begun of material:  vjti_3
+			processing texture vjti_3
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  building1
+		processing begun of material:  building1
+			processing texture building1
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  building3
+		processing begun of material:  building3
+			processing texture building3
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  building4
+		processing begun of material:  building4
+			processing texture building4
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  building5
+		processing begun of material:  building5
+			processing texture building5
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  demo2
+		processing begun of material:  demo2
+			processing texture demo2
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  demo4
+		processing begun of material:  demo4
+			processing texture demo4
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  1
+		processing begun of material:  1
+			processing texture _1
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  3
+		processing begun of material:  3
+			processing texture _3
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  Cube_blender
+		processing begun of material:  blender
+			processing texture blender_tex
+		Custom split normals with tangents being used
+		num positions      :  227
+		num normals        :  227
+		num tangents       :  908
+		num uvs            :  454
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  188
+	processing begun of mesh:  Cube_bjs
+		processing begun of material:  bjs
+			processing texture bhjs_tex
+		Custom split normals with tangents being used
+		num positions      :  227
+		num normals        :  227
+		num tangents       :  908
+		num uvs            :  454
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  188
+	processing begun of mesh:  Cube_csharp
+		processing begun of material:  csharp
+			processing texture csharp_tex
+		Custom split normals with tangents being used
+		num positions      :  227
+		num normals        :  227
+		num tangents       :  908
+		num uvs            :  454
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  188
+	processing begun of mesh:  Cube_py
+		processing begun of material:  py
+			processing texture py_tex
+		Custom split normals with tangents being used
+		num positions      :  314
+		num normals        :  314
+		num tangents       :  1256
+		num uvs            :  628
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  188
+	processing begun of mesh:  Cube_js
+		processing begun of material:  js
+			processing texture js_tex
+		Custom split normals with tangents being used
+		num positions      :  227
+		num normals        :  227
+		num tangents       :  908
+		num uvs            :  454
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  188
+	processing begun of mesh:  Cube_unity
+		processing begun of material:  unity
+			WARNING: unsupported node type(ShaderNodeBump) will trigger baking
+			processing texture unity_tex
+			processing texture unity_tex
+			bake time:  0 min, 0.0056 secs
+		Custom split normals with tangents being used
+		num positions      :  227
+		num normals        :  227
+		num tangents       :  908
+		num uvs            :  454
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  188
+	processing begun of mesh:  Cube_meshroom
+		processing begun of material:  meshroom
+			processing texture meshroom_tex
+		Custom split normals with tangents being used
+		num positions      :  227
+		num normals        :  227
+		num tangents       :  908
+		num uvs            :  454
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  188
+	processing begun of mesh:  Cube_blender.001
+		processing begun of material:  blender
+		registered as also a user of material:  blender
+		Custom split normals with tangents being used
+		num positions      :  227
+		num normals        :  227
+		num tangents       :  908
+		num uvs            :  454
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  188
+	processing begun of mesh:  Cube_py.001
+		processing begun of material:  py
+		registered as also a user of material:  py
+		Custom split normals with tangents being used
+		num positions      :  314
+		num normals        :  314
+		num tangents       :  1256
+		num uvs            :  628
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  188
+	processing begun of mesh:  Cube_sd
+		processing begun of material:  substance
+			processing texture sd_tex
+		Custom split normals with tangents being used
+		num positions      :  216
+		num normals        :  216
+		num tangents       :  864
+		num uvs            :  432
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  188
+	processing begun of mesh:  Cube_blender.002
+		processing begun of material:  blender
+		registered as also a user of material:  blender
+		Custom split normals with tangents being used
+		num positions      :  227
+		num normals        :  227
+		num tangents       :  908
+		num uvs            :  454
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  188
+	processing begun of light (POINT):  Point
+========= Writing of JSON file started =========
+	writing mesh:  Collider
+	writing mesh:  Cube.006
+	writing mesh:  Cube.007
+	writing mesh:  Cube.008
+	writing mesh:  Plane
+	writing mesh:  wall
+	writing mesh:  wall1
+	writing mesh:  wall2
+	writing mesh:  wall3
+	writing mesh:  wall4
+	writing mesh:  text
+	writing mesh:  text.005
+	writing mesh:  text.006
+	writing mesh:  text.007
+	writing mesh:  text.004
+	writing mesh:  text.008
+	writing mesh:  text.011
+	writing mesh:  text.012
+	writing mesh:  text.013
+	writing mesh:  text.014
+	writing mesh:  text.009
+	writing mesh:  text.015
+	writing mesh:  text.016
+	writing mesh:  Plane.001
+	writing mesh:  Plane.002
+	writing mesh:  Plane.003
+	writing mesh:  Plane.004
+	writing mesh:  Plane.005
+	writing mesh:  creokala_tv
+	writing mesh:  vjti_tv
+	writing mesh:  vjti_1
+	writing mesh:  vjti_2
+	writing mesh:  vjti_3
+	writing mesh:  building1
+	writing mesh:  building3
+	writing mesh:  building4
+	writing mesh:  building5
+	writing mesh:  demo2
+	writing mesh:  demo4
+	writing mesh:  1
+	writing mesh:  3
+	writing mesh:  Cube_blender
+	writing mesh:  Cube_bjs
+	writing mesh:  Cube_csharp
+	writing mesh:  Cube_py
+	writing mesh:  Cube_js
+	writing mesh:  Cube_unity
+	writing mesh:  Cube_meshroom
+	writing mesh:  Cube_blender.001
+	writing mesh:  Cube_py.001
+	writing mesh:  Cube_sd
+	writing mesh:  Cube_blender.002
+========= Writing of JSON file completed =========
+========= end of processing =========
+elapsed time:  0 min, 16.6956 secs

@@ -1,0 +1,988 @@
+Exporter version: 3.3.1, Blender version: 3.6.1
+========= Conversion from Blender to Babylon.js =========
+	Scene settings used :
+		Inline textures     :  false
+		Material Type       :  PBR
+		Positions Precision :  4
+		Normals Precision   :  3
+		UVs Precision       :  3
+		Vert Color Precision:  3
+		Mat Weight Precision:  2
+		Keep Z-up r-handed  :  no
+		Texture directory   :  C:\Work\Projects_2024\Portfolio_Website_Oct2024\babylon\
+	Python World class constructor completed
+	WARNING: No active camera has been assigned, or is not in a currently enabled collection
+	processing begun of mesh:  target
+		WARNING: No materials have been assigned: 
+		num positions      :  33
+		num normals        :  33
+		num tangents       :  0
+		num uvs            :  0
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  40
+	processing begun of mesh:  img_plane_0
+		processing begun of material:  mat_1.png.001
+			processing texture _1
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  img_frame
+		processing begun of material:  Grey
+		processing begun of material:  White
+		processing begun of multimaterial:  art.Multimaterial#0
+		Custom split normals with tangents being used
+		num positions      :  172
+		num normals        :  172
+		num tangents       :  688
+		num uvs            :  344
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  84
+	processing begun of mesh:  img_plane_1
+		processing begun of material:  mat_10.png.001
+			processing texture _10
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  img_frame.001
+		processing begun of material:  Grey
+		processing begun of material:  White
+		registered as also a user of material:  Grey
+		registered as also a user of material:  White
+		processing begun of multimaterial:  art.Multimaterial#1
+		Custom split normals with tangents being used
+		num positions      :  172
+		num normals        :  172
+		num tangents       :  688
+		num uvs            :  344
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  84
+	processing begun of mesh:  img_plane_2
+		processing begun of material:  mat_11.png.001
+			processing texture _11
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  img_frame.002
+		processing begun of material:  Grey
+		processing begun of material:  White
+		registered as also a user of material:  Grey
+		registered as also a user of material:  White
+		processing begun of multimaterial:  art.Multimaterial#2
+		Custom split normals with tangents being used
+		num positions      :  172
+		num normals        :  172
+		num tangents       :  688
+		num uvs            :  344
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  84
+	processing begun of mesh:  img_plane_3
+		processing begun of material:  mat_12.png.001
+			processing texture _12
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  img_frame.003
+		processing begun of material:  Grey
+		processing begun of material:  White
+		registered as also a user of material:  Grey
+		registered as also a user of material:  White
+		processing begun of multimaterial:  art.Multimaterial#3
+		Custom split normals with tangents being used
+		num positions      :  172
+		num normals        :  172
+		num tangents       :  688
+		num uvs            :  344
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  84
+	processing begun of mesh:  img_plane_4
+		processing begun of material:  mat_13.png.001
+			processing texture _13
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  img_frame.004
+		processing begun of material:  Grey
+		processing begun of material:  White
+		registered as also a user of material:  Grey
+		registered as also a user of material:  White
+		processing begun of multimaterial:  art.Multimaterial#4
+		Custom split normals with tangents being used
+		num positions      :  172
+		num normals        :  172
+		num tangents       :  688
+		num uvs            :  344
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  84
+	processing begun of mesh:  img_plane_5
+		processing begun of material:  mat_14.png.001
+			processing texture _14
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  img_frame.005
+		processing begun of material:  Grey
+		processing begun of material:  White
+		registered as also a user of material:  Grey
+		registered as also a user of material:  White
+		processing begun of multimaterial:  art.Multimaterial#5
+		Custom split normals with tangents being used
+		num positions      :  172
+		num normals        :  172
+		num tangents       :  688
+		num uvs            :  344
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  84
+	processing begun of mesh:  img_plane_6
+		processing begun of material:  mat_15.png.001
+			processing texture _15
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  img_frame.006
+		processing begun of material:  Grey
+		processing begun of material:  White
+		registered as also a user of material:  Grey
+		registered as also a user of material:  White
+		processing begun of multimaterial:  art.Multimaterial#6
+		Custom split normals with tangents being used
+		num positions      :  172
+		num normals        :  172
+		num tangents       :  688
+		num uvs            :  344
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  84
+	processing begun of mesh:  img_plane_7
+		processing begun of material:  mat_16.png.001
+			processing texture _16
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  img_frame.007
+		processing begun of material:  Grey
+		processing begun of material:  White
+		registered as also a user of material:  Grey
+		registered as also a user of material:  White
+		processing begun of multimaterial:  art.Multimaterial#7
+		Custom split normals with tangents being used
+		num positions      :  172
+		num normals        :  172
+		num tangents       :  688
+		num uvs            :  344
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  84
+	processing begun of mesh:  img_plane_8
+		processing begun of material:  mat_17.png.001
+			processing texture _17
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  img_frame.008
+		processing begun of material:  Grey
+		processing begun of material:  White
+		registered as also a user of material:  Grey
+		registered as also a user of material:  White
+		processing begun of multimaterial:  art.Multimaterial#8
+		Custom split normals with tangents being used
+		num positions      :  172
+		num normals        :  172
+		num tangents       :  688
+		num uvs            :  344
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  84
+	processing begun of mesh:  img_plane_9
+		processing begun of material:  mat_18.png.001
+			processing texture _18
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  img_frame.009
+		processing begun of material:  Grey
+		processing begun of material:  White
+		registered as also a user of material:  Grey
+		registered as also a user of material:  White
+		processing begun of multimaterial:  art.Multimaterial#9
+		Custom split normals with tangents being used
+		num positions      :  172
+		num normals        :  172
+		num tangents       :  688
+		num uvs            :  344
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  84
+	processing begun of mesh:  img_plane_10
+		processing begun of material:  mat_19.png.001
+			processing texture _19
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  img_frame.010
+		processing begun of material:  Grey
+		processing begun of material:  White
+		registered as also a user of material:  Grey
+		registered as also a user of material:  White
+		processing begun of multimaterial:  art.Multimaterial#10
+		Custom split normals with tangents being used
+		num positions      :  172
+		num normals        :  172
+		num tangents       :  688
+		num uvs            :  344
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  84
+	processing begun of mesh:  img_plane_11
+		processing begun of material:  mat_2.png.001
+			processing texture _2
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  img_frame.011
+		processing begun of material:  Grey
+		processing begun of material:  White
+		registered as also a user of material:  Grey
+		registered as also a user of material:  White
+		processing begun of multimaterial:  art.Multimaterial#11
+		Custom split normals with tangents being used
+		num positions      :  172
+		num normals        :  172
+		num tangents       :  688
+		num uvs            :  344
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  84
+	processing begun of mesh:  img_plane_12
+		processing begun of material:  mat_20.png.001
+			processing texture _20
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  img_frame.012
+		processing begun of material:  Grey
+		processing begun of material:  White
+		registered as also a user of material:  Grey
+		registered as also a user of material:  White
+		processing begun of multimaterial:  art.Multimaterial#12
+		Custom split normals with tangents being used
+		num positions      :  172
+		num normals        :  172
+		num tangents       :  688
+		num uvs            :  344
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  84
+	processing begun of mesh:  img_plane_13
+		processing begun of material:  mat_21.png.001
+			processing texture _21
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  img_frame.013
+		processing begun of material:  Grey
+		processing begun of material:  White
+		registered as also a user of material:  Grey
+		registered as also a user of material:  White
+		processing begun of multimaterial:  art.Multimaterial#13
+		Custom split normals with tangents being used
+		num positions      :  172
+		num normals        :  172
+		num tangents       :  688
+		num uvs            :  344
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  84
+	processing begun of mesh:  img_plane_14
+		processing begun of material:  mat_22.png.001
+			processing texture _22
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  img_frame.014
+		processing begun of material:  Grey
+		processing begun of material:  White
+		registered as also a user of material:  Grey
+		registered as also a user of material:  White
+		processing begun of multimaterial:  art.Multimaterial#14
+		Custom split normals with tangents being used
+		num positions      :  172
+		num normals        :  172
+		num tangents       :  688
+		num uvs            :  344
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  84
+	processing begun of mesh:  img_plane_15
+		processing begun of material:  mat_23.png.001
+			processing texture _23
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  img_frame.015
+		processing begun of material:  Grey
+		processing begun of material:  White
+		registered as also a user of material:  Grey
+		registered as also a user of material:  White
+		processing begun of multimaterial:  art.Multimaterial#15
+		Custom split normals with tangents being used
+		num positions      :  172
+		num normals        :  172
+		num tangents       :  688
+		num uvs            :  344
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  84
+	processing begun of mesh:  img_plane_16
+		processing begun of material:  mat_24.png.001
+			processing texture _24
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  img_frame.016
+		processing begun of material:  Grey
+		processing begun of material:  White
+		registered as also a user of material:  Grey
+		registered as also a user of material:  White
+		processing begun of multimaterial:  art.Multimaterial#16
+		Custom split normals with tangents being used
+		num positions      :  172
+		num normals        :  172
+		num tangents       :  688
+		num uvs            :  344
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  84
+	processing begun of mesh:  img_plane_17
+		processing begun of material:  mat_25.png.001
+			processing texture _25
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  img_frame.017
+		processing begun of material:  Grey
+		processing begun of material:  White
+		registered as also a user of material:  Grey
+		registered as also a user of material:  White
+		processing begun of multimaterial:  art.Multimaterial#17
+		Custom split normals with tangents being used
+		num positions      :  172
+		num normals        :  172
+		num tangents       :  688
+		num uvs            :  344
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  84
+	processing begun of mesh:  img_plane_18
+		processing begun of material:  mat_26.png.001
+			processing texture _26
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  img_frame.018
+		processing begun of material:  Grey
+		processing begun of material:  White
+		registered as also a user of material:  Grey
+		registered as also a user of material:  White
+		processing begun of multimaterial:  art.Multimaterial#18
+		Custom split normals with tangents being used
+		num positions      :  172
+		num normals        :  172
+		num tangents       :  688
+		num uvs            :  344
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  84
+	processing begun of mesh:  img_plane_19
+		processing begun of material:  mat_27.png.001
+			processing texture _27
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  img_frame.019
+		processing begun of material:  Grey
+		processing begun of material:  White
+		registered as also a user of material:  Grey
+		registered as also a user of material:  White
+		processing begun of multimaterial:  art.Multimaterial#19
+		Custom split normals with tangents being used
+		num positions      :  172
+		num normals        :  172
+		num tangents       :  688
+		num uvs            :  344
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  84
+	processing begun of mesh:  img_plane_20
+		processing begun of material:  mat_28.png.001
+			processing texture _28
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  img_frame.020
+		processing begun of material:  Grey
+		processing begun of material:  White
+		registered as also a user of material:  Grey
+		registered as also a user of material:  White
+		processing begun of multimaterial:  art.Multimaterial#20
+		Custom split normals with tangents being used
+		num positions      :  172
+		num normals        :  172
+		num tangents       :  688
+		num uvs            :  344
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  84
+	processing begun of mesh:  img_plane_21
+		processing begun of material:  mat_29.png.001
+			processing texture _29
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  img_frame.021
+		processing begun of material:  Grey
+		processing begun of material:  White
+		registered as also a user of material:  Grey
+		registered as also a user of material:  White
+		processing begun of multimaterial:  art.Multimaterial#21
+		Custom split normals with tangents being used
+		num positions      :  172
+		num normals        :  172
+		num tangents       :  688
+		num uvs            :  344
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  84
+	processing begun of mesh:  img_plane_22
+		processing begun of material:  mat_3.png.001
+			processing texture _3
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  img_frame.022
+		processing begun of material:  Grey
+		processing begun of material:  White
+		registered as also a user of material:  Grey
+		registered as also a user of material:  White
+		processing begun of multimaterial:  art.Multimaterial#22
+		Custom split normals with tangents being used
+		num positions      :  172
+		num normals        :  172
+		num tangents       :  688
+		num uvs            :  344
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  84
+	processing begun of mesh:  img_plane_23
+		processing begun of material:  mat_30.png.001
+			processing texture _30
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  img_frame.023
+		processing begun of material:  Grey
+		processing begun of material:  White
+		registered as also a user of material:  Grey
+		registered as also a user of material:  White
+		processing begun of multimaterial:  art.Multimaterial#23
+		Custom split normals with tangents being used
+		num positions      :  172
+		num normals        :  172
+		num tangents       :  688
+		num uvs            :  344
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  84
+	processing begun of mesh:  img_plane_24
+		processing begun of material:  mat_31.png.001
+			processing texture _31
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  img_frame.024
+		processing begun of material:  Grey
+		processing begun of material:  White
+		registered as also a user of material:  Grey
+		registered as also a user of material:  White
+		processing begun of multimaterial:  art.Multimaterial#24
+		Custom split normals with tangents being used
+		num positions      :  172
+		num normals        :  172
+		num tangents       :  688
+		num uvs            :  344
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  84
+	processing begun of mesh:  img_plane_25
+		processing begun of material:  mat_4.png.001
+			processing texture _4
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  img_frame.025
+		processing begun of material:  Grey
+		processing begun of material:  White
+		registered as also a user of material:  Grey
+		registered as also a user of material:  White
+		processing begun of multimaterial:  art.Multimaterial#25
+		Custom split normals with tangents being used
+		num positions      :  172
+		num normals        :  172
+		num tangents       :  688
+		num uvs            :  344
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  84
+	processing begun of mesh:  img_plane_26
+		processing begun of material:  mat_5.png.001
+			processing texture _5
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  img_frame.026
+		processing begun of material:  Grey
+		processing begun of material:  White
+		registered as also a user of material:  Grey
+		registered as also a user of material:  White
+		processing begun of multimaterial:  art.Multimaterial#26
+		Custom split normals with tangents being used
+		num positions      :  172
+		num normals        :  172
+		num tangents       :  688
+		num uvs            :  344
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  84
+	processing begun of mesh:  img_plane_27
+		processing begun of material:  mat_6.png.001
+			processing texture _6
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  img_frame.027
+		processing begun of material:  Grey
+		processing begun of material:  White
+		registered as also a user of material:  Grey
+		registered as also a user of material:  White
+		processing begun of multimaterial:  art.Multimaterial#27
+		Custom split normals with tangents being used
+		num positions      :  172
+		num normals        :  172
+		num tangents       :  688
+		num uvs            :  344
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  84
+	processing begun of mesh:  img_plane_28
+		processing begun of material:  mat_7.png.001
+			processing texture _7
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  img_frame.028
+		processing begun of material:  Grey
+		processing begun of material:  White
+		registered as also a user of material:  Grey
+		registered as also a user of material:  White
+		processing begun of multimaterial:  art.Multimaterial#28
+		Custom split normals with tangents being used
+		num positions      :  172
+		num normals        :  172
+		num tangents       :  688
+		num uvs            :  344
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  84
+	processing begun of mesh:  img_plane_29
+		processing begun of material:  mat_8.png.001
+			processing texture _8
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  img_frame.029
+		processing begun of material:  Grey
+		processing begun of material:  White
+		registered as also a user of material:  Grey
+		registered as also a user of material:  White
+		processing begun of multimaterial:  art.Multimaterial#29
+		Custom split normals with tangents being used
+		num positions      :  172
+		num normals        :  172
+		num tangents       :  688
+		num uvs            :  344
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  84
+	processing begun of mesh:  img_plane_30
+		processing begun of material:  mat_9.png.001
+			processing texture _9
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  img_frame.030
+		processing begun of material:  Grey
+		processing begun of material:  White
+		registered as also a user of material:  Grey
+		registered as also a user of material:  White
+		processing begun of multimaterial:  art.Multimaterial#30
+		Custom split normals with tangents being used
+		num positions      :  172
+		num normals        :  172
+		num tangents       :  688
+		num uvs            :  344
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  84
+	processing begun of node:  accessories
+	processing begun of mesh:  wall1
+		processing begun of material:  Material.001
+		num positions      :  30
+		num normals        :  30
+		num tangents       :  0
+		num uvs            :  60
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  12
+	processing begun of mesh:  wall2
+		processing begun of material:  Material.001
+		registered as also a user of material:  Material.001
+		num positions      :  30
+		num normals        :  30
+		num tangents       :  0
+		num uvs            :  60
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  12
+	processing begun of mesh:  wall3
+		processing begun of material:  Material.001
+		registered as also a user of material:  Material.001
+		num positions      :  31
+		num normals        :  31
+		num tangents       :  0
+		num uvs            :  62
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  12
+	processing begun of mesh:  wall4
+		processing begun of material:  Material.001
+		registered as also a user of material:  Material.001
+		num positions      :  31
+		num normals        :  31
+		num tangents       :  0
+		num uvs            :  62
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  12
+	processing begun of mesh:  wall1.001
+		processing begun of material:  Material.001
+		registered as also a user of material:  Material.001
+		num positions      :  30
+		num normals        :  30
+		num tangents       :  0
+		num uvs            :  60
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  12
+	processing begun of mesh:  wall2.001
+		processing begun of material:  Material.001
+		registered as also a user of material:  Material.001
+		num positions      :  30
+		num normals        :  30
+		num tangents       :  0
+		num uvs            :  60
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  12
+	processing begun of mesh:  wall3.001
+		processing begun of material:  Material.001
+		registered as also a user of material:  Material.001
+		num positions      :  31
+		num normals        :  31
+		num tangents       :  0
+		num uvs            :  62
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  12
+	processing begun of mesh:  wall4.001
+		processing begun of material:  Material.001
+		registered as also a user of material:  Material.001
+		num positions      :  31
+		num normals        :  31
+		num tangents       :  0
+		num uvs            :  62
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  12
+	processing begun of mesh:  Plane.002
+		processing begun of material:  1
+		processing begun of material:  2
+		processing begun of material:  3
+		processing begun of material:  4
+		processing begun of material:  5
+		processing begun of material:  6
+		processing begun of material:  7
+		processing begun of material:  8
+		processing begun of material:  9
+		processing begun of material:  10
+		processing begun of multimaterial:  art.Multimaterial#31
+		num positions      :  100
+		num normals        :  100
+		num tangents       :  0
+		num uvs            :  200
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  50
+	processing begun of mesh:  wall
+		processing begun of material:  idek
+		Custom split normals with tangents being used
+		num positions      :  329
+		num normals        :  329
+		num tangents       :  1316
+		num uvs            :  658
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  148
+	processing begun of mesh:  Plane
+		processing begun of material:  White
+		registered as also a user of material:  White
+		Custom split normals with tangents being used
+		num positions      :  286
+		num normals        :  286
+		num tangents       :  1144
+		num uvs            :  572
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  188
+	processing begun of mesh:  text
+		processing begun of material:  text_main.001
+		num positions      :  779
+		num normals        :  779
+		num tangents       :  0
+		num uvs            :  0
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  776
+	processing begun of mesh:  frame
+		processing begun of material:  Grey
+		processing begun of material:  White
+		registered as also a user of material:  Grey
+		registered as also a user of material:  White
+		processing begun of multimaterial:  art.Multimaterial#32
+		Custom split normals with tangents being used
+		num positions      :  172
+		num normals        :  172
+		num tangents       :  688
+		num uvs            :  344
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  84
+========= Writing of JSON file started =========
+	writing mesh:  target
+	writing mesh:  img_plane_0
+	writing mesh:  img_frame
+	writing mesh:  img_plane_1
+	writing mesh:  img_frame.001
+	writing mesh:  img_plane_2
+	writing mesh:  img_frame.002
+	writing mesh:  img_plane_3
+	writing mesh:  img_frame.003
+	writing mesh:  img_plane_4
+	writing mesh:  img_frame.004
+	writing mesh:  img_plane_5
+	writing mesh:  img_frame.005
+	writing mesh:  img_plane_6
+	writing mesh:  img_frame.006
+	writing mesh:  img_plane_7
+	writing mesh:  img_frame.007
+	writing mesh:  img_plane_8
+	writing mesh:  img_frame.008
+	writing mesh:  img_plane_9
+	writing mesh:  img_frame.009
+	writing mesh:  img_plane_10
+	writing mesh:  img_frame.010
+	writing mesh:  img_plane_11
+	writing mesh:  img_frame.011
+	writing mesh:  img_plane_12
+	writing mesh:  img_frame.012
+	writing mesh:  img_plane_13
+	writing mesh:  img_frame.013
+	writing mesh:  img_plane_14
+	writing mesh:  img_frame.014
+	writing mesh:  img_plane_15
+	writing mesh:  img_frame.015
+	writing mesh:  img_plane_16
+	writing mesh:  img_frame.016
+	writing mesh:  img_plane_17
+	writing mesh:  img_frame.017
+	writing mesh:  img_plane_18
+	writing mesh:  img_frame.018
+	writing mesh:  img_plane_19
+	writing mesh:  img_frame.019
+	writing mesh:  img_plane_20
+	writing mesh:  img_frame.020
+	writing mesh:  img_plane_21
+	writing mesh:  img_frame.021
+	writing mesh:  img_plane_22
+	writing mesh:  img_frame.022
+	writing mesh:  img_plane_23
+	writing mesh:  img_frame.023
+	writing mesh:  img_plane_24
+	writing mesh:  img_frame.024
+	writing mesh:  img_plane_25
+	writing mesh:  img_frame.025
+	writing mesh:  img_plane_26
+	writing mesh:  img_frame.026
+	writing mesh:  img_plane_27
+	writing mesh:  img_frame.027
+	writing mesh:  img_plane_28
+	writing mesh:  img_frame.028
+	writing mesh:  img_plane_29
+	writing mesh:  img_frame.029
+	writing mesh:  img_plane_30
+	writing mesh:  img_frame.030
+	writing mesh:  wall1
+	writing mesh:  wall2
+	writing mesh:  wall3
+	writing mesh:  wall4
+	writing mesh:  wall1.001
+	writing mesh:  wall2.001
+	writing mesh:  wall3.001
+	writing mesh:  wall4.001
+	writing mesh:  Plane.002
+	writing mesh:  wall
+	writing mesh:  Plane
+	writing mesh:  text
+	writing mesh:  frame
+========= Writing of JSON file completed =========
+========= end of processing =========
+elapsed time:  0 min, 1.7029 secs

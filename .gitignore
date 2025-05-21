@@ -1,0 +1,31 @@
+#blndr
+*.blend
+*.blend1
+*.blend2
+
+
+#node modules
+node_modules/
+
+assets/**
+
+# Except keep artworks.json
+!assets/artworks.json
+!assets/videos/
+!assets/videos/**
+
+# Ignore Blender project folder
+blender/
+
+# Ignore Playfair Display font folder (you slay but Git doesn’t need the fonts)
+Playfair_Display/**
+Playfair_Display/
+
+# Ignore reference folder with inspo images or PDFs
+references/
+
+
+documentation.odt
+plan.txt
+
+index1.html

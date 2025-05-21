@@ -1,0 +1,461 @@
+Exporter version: 3.3.1, Blender version: 3.6.1
+========= Conversion from Blender to Babylon.js =========
+	Scene settings used :
+		Inline textures     :  false
+		Material Type       :  PBR
+		Positions Precision :  4
+		Normals Precision   :  3
+		UVs Precision       :  3
+		Vert Color Precision:  3
+		Mat Weight Precision:  2
+		Keep Z-up r-handed  :  no
+		Texture directory   :  C:\Work\Projects_2024\Portfolio_Website_Oct2024\babylon\
+	Python World class constructor completed
+	WARNING: No active camera has been assigned, or is not in a currently enabled collection
+	processing begun of mesh:  Suzanne
+		processing begun of material:  Material
+		num positions      :  2892
+		num normals        :  2892
+		num tangents       :  0
+		num uvs            :  5784
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  968
+	processing begun of mesh:  target
+		WARNING: No materials have been assigned: 
+		num positions      :  25
+		num normals        :  25
+		num tangents       :  0
+		num uvs            :  0
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  32
+	processing begun of mesh:  frame
+		processing begun of material:  White
+		processing begun of material:  Grey
+		processing begun of multimaterial:  test.Multimaterial#0
+		num positions      :  70
+		num normals        :  70
+		num tangents       :  0
+		num uvs            :  140
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  28
+	processing begun of mesh:  img_plane_0
+		processing begun of material:  mat_1.png.031
+			processing texture _1
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  img_frame
+		mesh is an instance of :  frame.  Processing halted.
+	processing begun of mesh:  img_plane_1
+		processing begun of material:  mat_10.png.026
+			processing texture _10
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  img_frame.001
+		mesh is an instance of :  frame.  Processing halted.
+	processing begun of mesh:  img_plane_2
+		processing begun of material:  mat_11.png.026
+			processing texture _11
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  img_frame.002
+		mesh is an instance of :  frame.  Processing halted.
+	processing begun of mesh:  img_plane_3
+		processing begun of material:  mat_12.png.026
+			processing texture _12
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  img_frame.003
+		mesh is an instance of :  frame.  Processing halted.
+	processing begun of mesh:  img_plane_4
+		processing begun of material:  mat_13.png.026
+			processing texture _13
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  img_frame.004
+		mesh is an instance of :  frame.  Processing halted.
+	processing begun of mesh:  img_plane_5
+		processing begun of material:  mat_14.png.026
+			processing texture _14
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  img_frame.005
+		mesh is an instance of :  frame.  Processing halted.
+	processing begun of mesh:  img_plane_6
+		processing begun of material:  mat_15.png.026
+			processing texture _15
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  img_frame.006
+		mesh is an instance of :  frame.  Processing halted.
+	processing begun of mesh:  img_plane_7
+		processing begun of material:  mat_16.png.026
+			processing texture _16
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  img_frame.007
+		mesh is an instance of :  frame.  Processing halted.
+	processing begun of mesh:  img_plane_8
+		processing begun of material:  mat_17.png.026
+			processing texture _17
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  img_frame.008
+		mesh is an instance of :  frame.  Processing halted.
+	processing begun of mesh:  img_plane_9
+		processing begun of material:  mat_18.png.026
+			processing texture _18
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  img_frame.009
+		mesh is an instance of :  frame.  Processing halted.
+	processing begun of mesh:  img_plane_10
+		processing begun of material:  mat_19.png.026
+			processing texture _19
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  img_frame.010
+		mesh is an instance of :  frame.  Processing halted.
+	processing begun of mesh:  img_plane_11
+		processing begun of material:  mat_2.png.026
+			processing texture _2
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  img_frame.011
+		mesh is an instance of :  frame.  Processing halted.
+	processing begun of mesh:  img_plane_12
+		processing begun of material:  mat_20.png.026
+			processing texture _20
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  img_frame.012
+		mesh is an instance of :  frame.  Processing halted.
+	processing begun of mesh:  img_plane_13
+		processing begun of material:  mat_21.png.026
+			processing texture _21
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  img_frame.013
+		mesh is an instance of :  frame.  Processing halted.
+	processing begun of mesh:  img_plane_14
+		processing begun of material:  mat_22.png.026
+			processing texture _22
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  img_frame.014
+		mesh is an instance of :  frame.  Processing halted.
+	processing begun of mesh:  img_plane_15
+		processing begun of material:  mat_23.png.026
+			processing texture _23
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  img_frame.015
+		mesh is an instance of :  frame.  Processing halted.
+	processing begun of mesh:  img_plane_16
+		processing begun of material:  mat_24.png.026
+			processing texture _24
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  img_frame.016
+		mesh is an instance of :  frame.  Processing halted.
+	processing begun of mesh:  img_plane_17
+		processing begun of material:  mat_25.png.026
+			processing texture _25
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  img_frame.017
+		mesh is an instance of :  frame.  Processing halted.
+	processing begun of mesh:  img_plane_18
+		processing begun of material:  mat_26.png.026
+			processing texture _26
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  img_frame.018
+		mesh is an instance of :  frame.  Processing halted.
+	processing begun of mesh:  img_plane_19
+		processing begun of material:  mat_27.png.026
+			processing texture _27
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  img_frame.019
+		mesh is an instance of :  frame.  Processing halted.
+	processing begun of mesh:  img_plane_20
+		processing begun of material:  mat_28.png.026
+			processing texture _28
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  img_frame.020
+		mesh is an instance of :  frame.  Processing halted.
+	processing begun of mesh:  img_plane_21
+		processing begun of material:  mat_29.png.026
+			processing texture _29
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  img_frame.021
+		mesh is an instance of :  frame.  Processing halted.
+	processing begun of mesh:  img_plane_22
+		processing begun of material:  mat_3.png.026
+			processing texture _3
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  img_frame.022
+		mesh is an instance of :  frame.  Processing halted.
+	processing begun of mesh:  img_plane_23
+		processing begun of material:  mat_30.png.026
+			processing texture _30
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  img_frame.023
+		mesh is an instance of :  frame.  Processing halted.
+	processing begun of mesh:  img_plane_24
+		processing begun of material:  mat_31.png.026
+			processing texture _31
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  img_frame.024
+		mesh is an instance of :  frame.  Processing halted.
+	processing begun of mesh:  wall1
+		processing begun of material:  Material.001
+		num positions      :  30
+		num normals        :  30
+		num tangents       :  0
+		num uvs            :  60
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  12
+	processing begun of mesh:  wall2
+		processing begun of material:  Material.001
+		registered as also a user of material:  Material.001
+		num positions      :  30
+		num normals        :  30
+		num tangents       :  0
+		num uvs            :  60
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  12
+	processing begun of mesh:  wall3
+		processing begun of material:  Material.001
+		registered as also a user of material:  Material.001
+		num positions      :  31
+		num normals        :  31
+		num tangents       :  0
+		num uvs            :  62
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  12
+	processing begun of mesh:  wall4
+		processing begun of material:  Material.001
+		registered as also a user of material:  Material.001
+		num positions      :  31
+		num normals        :  31
+		num tangents       :  0
+		num uvs            :  62
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  12
+	processing begun of mesh:  Plane
+		processing begun of material:  White
+		registered as also a user of material:  White
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  Plane.001
+		processing begun of material:  White
+		registered as also a user of material:  White
+		Custom split normals with tangents being used
+		num positions      :  273
+		num normals        :  273
+		num tangents       :  1092
+		num uvs            :  546
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  108
+	processing begun of mesh:  Plane.002
+		processing begun of material:  1
+		processing begun of material:  2
+		processing begun of material:  3
+		processing begun of material:  4
+		processing begun of material:  5
+		processing begun of material:  6
+		processing begun of material:  7
+		processing begun of material:  8
+		processing begun of material:  9
+		processing begun of material:  10
+		processing begun of multimaterial:  test.Multimaterial#1
+		num positions      :  100
+		num normals        :  100
+		num tangents       :  0
+		num uvs            :  200
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  50
+========= Writing of JSON file started =========
+	writing mesh:  Suzanne
+	writing mesh:  target
+	writing mesh:  frame
+	writing mesh:  img_plane_0
+	writing mesh:  img_plane_1
+	writing mesh:  img_plane_2
+	writing mesh:  img_plane_3
+	writing mesh:  img_plane_4
+	writing mesh:  img_plane_5
+	writing mesh:  img_plane_6
+	writing mesh:  img_plane_7
+	writing mesh:  img_plane_8
+	writing mesh:  img_plane_9
+	writing mesh:  img_plane_10
+	writing mesh:  img_plane_11
+	writing mesh:  img_plane_12
+	writing mesh:  img_plane_13
+	writing mesh:  img_plane_14
+	writing mesh:  img_plane_15
+	writing mesh:  img_plane_16
+	writing mesh:  img_plane_17
+	writing mesh:  img_plane_18
+	writing mesh:  img_plane_19
+	writing mesh:  img_plane_20
+	writing mesh:  img_plane_21
+	writing mesh:  img_plane_22
+	writing mesh:  img_plane_23
+	writing mesh:  img_plane_24
+	writing mesh:  wall1
+	writing mesh:  wall2
+	writing mesh:  wall3
+	writing mesh:  wall4
+	writing mesh:  Plane
+	writing mesh:  Plane.001
+	writing mesh:  Plane.002
+========= Writing of JSON file completed =========
+========= end of processing =========
+elapsed time:  0 min, 0.9129 secs

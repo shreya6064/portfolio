@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Home</title>
+  <link rel="stylesheet" href="./css/style.css" />
+
+  <!-- BabylonJS -->
+  <script src="https://preview.babylonjs.com/babylon.js"></script>
+  <script src="https://preview.babylonjs.com/Oimo.js"></script> <!-- or Cannon.js -->
+</head>
+
+<body>
+  <!-- These will be loaded dynamically -->
+  <header></header>
+  <main>
+    <canvas id="canvas"></canvas>
+  </main>
+  <footer></footer>
+
+  <script type="module">
+    import { initializeEngine, createScene } from './js/sceneSetup.js';
+    import { setupCamera } from './js/cameraSetup.js';
+    import { setupLights } from './js/lightSetup.js';
+    import { loadMeshes } from './js/meshSetup.js';
+    import { setupInteractions } from './js/interactions.js';
+    import { setupInputControls } from './js/inputControls.js';
+
+    //real time video
+    import { makeVideoTV } from './js/tvHandler.js';
+
+
+
+    // Load header & footer from separate HTML files
+    fetch("header.html").then(res => res.text()).then(data => {
+      document.querySelector("header").innerHTML = data;
+    });
+    fetch("footer.html").then(res => res.text()).then(data => {
+      document.querySelector("footer").innerHTML = data;
+    });
+
+
+
+
+
+
+
+
+
+    const canvas = document.getElementById("canvas");
+    const engine = initializeEngine(canvas);
+    const scene = createScene(engine);
+    const camera = setupCamera(scene, canvas);
+    setupLights(scene);
+
+    loadMeshes(scene, "home.babylon").then((meshes) => {
+      setupInteractions(meshes, scene);
+      makeVideoTV(scene, "creokala_tv", "creokala_anim.mp4");
+      makeVideoTV(scene, "vjti_tv", "3d_virtual_campus_demo_10001-1135.mp4");
+    });
+
+    setupInputControls(scene, camera, canvas, { min: -16, max: 5 });
+
+
+
+
+
+
+
+
+
+
+
+
+    engine.runRenderLoop(() => {
+      scene.render();
+    });
+
+    window.addEventListener("resize", () => {
+      engine.resize();
+    });
+  </script>
+</body>
+</html>

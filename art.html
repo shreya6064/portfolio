@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Art</title>
+  <link rel="stylesheet" href="./css/style.css" />
+
+  <!-- BabylonJS -->
+  <script src="https://preview.babylonjs.com/babylon.js"></script>
+  <script src="https://preview.babylonjs.com/Oimo.js"></script> <!-- or Cannon.js -->
+  
+</head>
+
+
+<body>
+    <header></header>
+    <main>
+        <!--<canvas id="canvas" touch-action="none"></canvas>-->
+        
+        <div class="canvas-wrapper">
+            <canvas id="canvas" touch-action="none"></canvas>
+          </div>
+    </main>
+    <footer></footer>
+
+
+
+    <div id="art-popup" class="popup hidden">
+        <div class="popup-content">
+          <img id="popup-image" src="" alt="Art Image" />
+          <p id="popup-description">This is a description of the artwork.</p>
+          <button id="popup-close">Close</button>
+        </div>
+      </div>
+      
+
+
+
+
+
+
+
+    
+    <script type="module">
+        import { initializeEngine, createScene } from './js/sceneSetup.js';
+        import { setupCamera } from './js/cameraSetup.js';
+        import { setupLights } from './js/lightSetup.js';
+        import { loadMeshes } from './js/meshSetupArt.js';
+        import { setupInteractions } from './js/interactionsArt.js';
+        import { setupInputControls } from './js/inputControls.js';
+
+
+
+
+
+
+        // Load header & footer from separate HTML files
+        fetch("header.html").then(res => res.text()).then(data => {
+        document.querySelector("header").innerHTML = data;
+        });
+        fetch("footer.html").then(res => res.text()).then(data => {
+        document.querySelector("footer").innerHTML = data;
+        });
+
+        
+        //popup things
+        const popup = document.getElementById("art-popup");
+        const popupImage = document.getElementById("popup-image");
+        const popupDescription = document.getElementById("popup-description");
+        const closeButton = document.getElementById("popup-close");
+
+        closeButton.addEventListener("click", () => {
+            popup.classList.add("hidden");
+        });
+
+        popup.addEventListener("click", (event) => {
+            // Only close if the click was directly on the backdrop, not inside the content
+            if (event.target === popup) {
+                popup.classList.add("hidden");
+            }
+        });
+
+        document.addEventListener("keydown", (event) => {
+            if (event.key === "Escape") {
+                popup.classList.add("hidden");
+            }
+        });
+
+
+
+
+
+
+
+
+
+
+
+
+        //loading in artworks.json
+        let artworks = [];
+
+        const artworksLoaded = fetch("assets/artworks.json")
+            .then(res => res.json())
+            .then(data => {
+            artworks = data;
+            });
+
+
+        function openPopup(index) {
+            const art = artworks[index];
+            if (!art) {
+                console.warn("No artwork found at index", index);
+                return;
+                }
+
+            popupImage.src = art.image;
+            popupDescription.textContent = art.description;
+            popup.classList.remove("hidden");
+        }
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        const canvas = document.getElementById("canvas");
+        //const engine = new BABYLON.Engine(canvas, true);
+        const engine = initializeEngine(canvas);
+
+        const scene = createScene(engine);
+        const camera = setupCamera(scene, canvas);
+        setupLights(scene);
+
+        //console.log("hello");
+
+        // Load the meshes from Blender-exported file and configure interactions
+        /*
+        loadMeshes(scene).then(cubes => {
+            setupInteractions(cubes, scene);
+        });
+        */
+        async function loadAndSetupScene() {
+            await artworksLoaded; 
+            const cubes1 = await loadMeshes(scene, "base.babylon");
+            const cubes = await loadMeshes(scene, "art.babylon");  // Load main scene
+            setupInteractions(cubes, scene, openPopup);
+            }
+
+        loadAndSetupScene(); // Call the async function
+
+
+
+
+
+
+
+        setupInputControls(scene, camera, canvas, { min: -20, max: 5 });
+
+        engine.runRenderLoop(() => {
+            scene.render();
+        });
+
+        window.addEventListener("resize", () => {
+            engine.resize();
+        });
+    </script>
+</body>
+</html>
