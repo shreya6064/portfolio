@@ -21,9 +21,10 @@ html, body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
     padding: 1rem 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
+    font-family: 'Playfair Display', serif;
+    z-index: 10;
     
   }
   
@@ -33,7 +34,8 @@ html, body {
   
   .nav-links {
     display: flex;
-    gap: 2rem;
+    gap: 1.5rem;
+    align-items: center;
   }
   
   .nav-links a {
@@ -46,13 +48,47 @@ html, body {
     align-items: center;
     gap: 0.4rem;
   }
+
+  .nav-links a i {
+    margin-right: 5px;
+  }
   
   .nav-links a:hover {
     color: #555;
   }
 
-  .nav-links i {
-    font-size: 1.1rem;
+  
+
+
+    /* Dropdown styles */
+  .dropdown {
+    position: relative;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    top: 100%;
+    left: 0;
+    z-index: 20;
+    min-width: 180px;
+  }
+
+  .dropdown-content a {
+    padding: 0.75rem 1rem;
+    display: block;
+    color: black;
+    text-decoration: none;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #f0f0f0;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: block;
   }
 
 
