@@ -28,9 +28,10 @@ export function makeVideoTV(scene, meshName, videoFile, options = {}) {
     videoTexture.vScale = -1;
     videoTexture.video.loop = loop;
     videoTexture.video.muted = muted;
-  
+    
+    
     if (autoplay) {
-      videoTexture.video.play();
+      videoTexture.video.pause();
     }
   
     const videoMat = new BABYLON.StandardMaterial(materialName, scene);
