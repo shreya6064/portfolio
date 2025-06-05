@@ -56,7 +56,7 @@ export function setupCamera(scene, canvas) {
     if (e.touches.length === 1 && lastTouchY !== null) {
       const currentY = e.touches[0].clientY;
       const deltaY = currentY - lastTouchY;
-      camera.position.y -= deltaY * 0.02; // adjust scroll speed here
+      camera.position.y += deltaY * 0.02; // adjust scroll speed here
       lastTouchY = currentY;
       e.preventDefault(); // Prevent browser scrolling
     }
@@ -69,7 +69,7 @@ export function setupCamera(scene, canvas) {
 
 
 
-  
+
     // Attach and activate camera
     camera.attachControl(canvas, false);
     scene.activeCamera = camera;
