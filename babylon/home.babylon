@@ -1,6 +1,6 @@
 {"producer":{"name":"Blender","version":"3.6.1","exporter_version":"3.3.1","file":"home.babylon"},
 "autoClear":true,"clearColor":[0.0509,0.0509,0.0509],"gravity":[0,-9.81,0],"environmentTexture":"lysGenerated_noon.env","isPBR":true,"environmentTextureRotationY":0,
-"materials":[{"name":"text_main","id":"text_main","customType":"BABYLON.PBRMaterial","albedo":[1,1,1],"emissive":[1,1,1],"reflectivity":[0.5,0.5,0.5],"roughness":1,"metallic":0},
+"materials":[{"name":"text_main","id":"text_main","customType":"BABYLON.PBRMaterial","backFaceCulling":false,"disableLighting":true,"albedo":[1,1,1],"emissive":[1,1,1],"reflectivity":[0.5,0.5,0.5],"roughness":1,"metallic":0},
 {"name":"White??","id":"White??","customType":"BABYLON.PBRMaterial","albedo":[1,1,1],"emissive":[0,0,0],"reflectivity":[0.5,0.5,0.5],"roughness":1,"metallic":0},
 {"name":"Shelves","id":"Shelves","customType":"BABYLON.PBRMaterial","albedo":[0.0509,0.0509,0.0509],"emissive":[0,0,0],"reflectivity":[0.5,0.5,0.5],"roughness":1,"metallic":0},
 {"name":"idek","id":"idek","customType":"BABYLON.PBRMaterial","albedo":[0,0,0],"emissive":[0,0,0],"reflectivity":[0.5,0.5,0.5],"roughness":1,"metallic":0},

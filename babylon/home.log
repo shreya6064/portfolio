@@ -332,7 +332,7 @@ Exporter version: 3.3.1, Blender version: 3.6.1
 			Baking texture, type: EMIT, mapped using: UVMap
 			processing texture vjti_1_baked_EMIT
 			emissive channel baked
-			bake time:  0 min, 3.4349 secs
+			bake time:  0 min, 0.9675 secs
 		num positions      :  4
 		num normals        :  4
 		num tangents       :  0
@@ -500,7 +500,7 @@ Exporter version: 3.3.1, Blender version: 3.6.1
 			WARNING: unsupported node type(ShaderNodeBump) will trigger baking
 			processing texture unity_tex
 			processing texture unity_tex
-			bake time:  0 min, 0.0056 secs
+			bake time:  0 min, 0.0017 secs
 		Custom split normals with tangents being used
 		num positions      :  227
 		num normals        :  227
@@ -620,4 +620,4 @@ Exporter version: 3.3.1, Blender version: 3.6.1
 	writing mesh:  Cube_blender.002
 ========= Writing of JSON file completed =========
 ========= end of processing =========
-elapsed time:  0 min, 16.6956 secs
+elapsed time:  0 min, 7.51 secs

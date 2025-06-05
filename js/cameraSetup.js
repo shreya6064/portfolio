@@ -1,87 +1,78 @@
 export function setupCamera(scene, canvas) {
-    const camera = new BABYLON.ArcRotateCamera("camera", 0, Math.PI / 2, 2, BABYLON.Vector3.Zero(), scene);
-    //alpha beta radius u silly idiot
+    // Create FreeCamera (no rotation/zoom/orbit behavior)
+    const camera = new BABYLON.FreeCamera("camera", new BABYLON.Vector3(0, 0, 0), scene);
 
-
-
-    // Enable ORTHOGRAPHIC mode
+    // ORTHOGRAPHIC mode for 2D-like projection
     camera.mode = BABYLON.Camera.ORTHOGRAPHIC_CAMERA;
 
-    // Define orthographic projection size (adjust these values as needed)
-    //const orthoSize = 3; // Controls how much of the scene is visible
-    //camera.orthoLeft = -orthoSize;
-    //camera.orthoRight = orthoSize;
-    //camera.orthoTop = orthoSize;
-    //camera.orthoBottom = -orthoSize;
-    const width = canvas.clientWidth;
-    const height = canvas.clientHeight;
-    const ratio = width / height;
+    // Set initial position and rotation to face +X (like left to right pages)
+    camera.position = new BABYLON.Vector3(10.0, 4.0, 0.0); 
+    camera.rotation = new BABYLON.Vector3(0, -Math.PI / 2, 0);
 
-    const orthoSize = 4;
-    camera.orthoLeft = -orthoSize * ratio;
-    camera.orthoRight = orthoSize * ratio;
-    camera.orthoTop = orthoSize;
-    camera.orthoBottom = -orthoSize;
+    // Set orthographic bounds
+    const resizeOrtho = () => {
+        const width = canvas.clientWidth;
+        const height = canvas.clientHeight;
+        const ratio = width / height;
+        const orthoSize = 3;
 
+        camera.orthoLeft = -orthoSize * ratio;
+        camera.orthoRight = orthoSize * ratio;
+        camera.orthoTop = orthoSize;
+        camera.orthoBottom = -orthoSize;
+    };
+    resizeOrtho();
+    window.addEventListener("resize", resizeOrtho);
 
+    // Disable all mouse controls
+    camera.inputs.clear();
 
+    // Enable only up/down keyboard movement
+    camera.keysUp = [87, 38];    // W or ↑
+    camera.keysDown = [83, 40];  // S or ↓
+    camera.keysLeft = [];
+    camera.keysRight = [];
 
-    var empty = scene.getMeshByName("Empty");
-
-    //point the camera is looking at in the start
-    camera.setTarget(new BABYLON.Vector3(-1.0 ,4.0, 0.0));
-    camera.keysDown = '83'
-    camera.keysUp = '87'
-    camera.keysLeft = '65'
-    camera.keysRight = '68'
-
-
-
-    // camera.upperBetaLimit = (Math.PI / 2);
-    // camera.lowerBetaLimit = Math.PI/2.5;
-    // camera.upperAlphaLimit = (Math.PI/6);
-    // camera.lowerAlphaLimit = -(Math.PI/6); 
-
-    camera.upperAlphaLimit = camera.alpha;
-    camera.lowerAlphaLimit = camera.alpha;
-    camera.upperBetaLimit = (Math.PI / 2);
-    camera.lowerBetaLimit = (Math.PI / 2);
-
-
-    camera.minZ = 0.1;
-    camera.angularSpeed = 0.05;
-
-    camera.fov=1.25;
-    
-
-    //setting maximunm and minimum camera zoom
-    //camera.lowerRadiusLimit = 3;
-    //camera.upperRadiusLimit = 7;
-
-
-
-    camera.lowerRadiusLimit = camera.radius;
-    camera.upperRadiusLimit = camera.radius;
-    camera.wheelPrecision = 0;
+    // Mouse wheel scroll = vertical motion
+    canvas.addEventListener("wheel", (e) => {
+        //e.preventDefault();
+        const scrollAmount = e.deltaY * 0.005;
+        camera.position.y -= scrollAmount;
+    }, { passive: false });
 
 
 
 
+    // ✅ Handle touch scroll (vertical movement only)
+  let lastTouchY = null;
 
-    camera.panningAxis = new BABYLON.Vector3(0,1,0);
-    camera.zoomingSensibility = 0;
+  canvas.addEventListener("touchstart", (e) => {
+    if (e.touches.length === 1) {
+      lastTouchY = e.touches[0].clientY;
+    }
+  });
 
-    camera._panningMouseButton = 1;
-    camera._useCtrlForPanning = false;
+  canvas.addEventListener("touchmove", (e) => {
+    if (e.touches.length === 1 && lastTouchY !== null) {
+      const currentY = e.touches[0].clientY;
+      const deltaY = currentY - lastTouchY;
+      camera.position.y -= deltaY * 0.02; // adjust scroll speed here
+      lastTouchY = currentY;
+      e.preventDefault(); // Prevent browser scrolling
+    }
+  });
+
+  canvas.addEventListener("touchend", () => {
+    lastTouchY = null;
+  });
 
 
-    
 
 
+  
+    // Attach and activate camera
     camera.attachControl(canvas, false);
-    //camera.applyGravity = true;
-    //camera.checkCollisions = true;
-    //camera.ellipsoid = new BABYLON.Vector3(0.3, 0.6, 0.4);
     scene.activeCamera = camera;
+
     return camera;
 }

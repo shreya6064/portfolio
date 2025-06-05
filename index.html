@@ -50,6 +50,12 @@
 
     const canvas = document.getElementById("canvas");
     const engine = initializeEngine(canvas);
+
+
+    //engine.setHardwareScalingLevel(1);
+    //scene.getEngine().samples = 4; // or 8
+
+
     const scene = createScene(engine);
     const camera = setupCamera(scene, canvas);
     setupLights(scene);

@@ -125,6 +125,7 @@ html, body {
     background: transparent;
     touch-action: none;
     display: block;
+    image-rendering: auto;
   }
 
   #canvas:focus {
