@@ -1,78 +1,51 @@
 export function setupCamera(scene, canvas) {
-    // Create FreeCamera (no rotation/zoom/orbit behavior)
-    const camera = new BABYLON.FreeCamera("camera", new BABYLON.Vector3(0, 0, 0), scene);
+  const camera = new BABYLON.ArcRotateCamera("camera", 0, Math.PI / 2, 10, new BABYLON.Vector3(-1.0, 4.0, 0.0), scene);
+  camera.mode = BABYLON.Camera.ORTHOGRAPHIC_CAMERA;
 
-    // ORTHOGRAPHIC mode for 2D-like projection
-    camera.mode = BABYLON.Camera.ORTHOGRAPHIC_CAMERA;
+  // Set orthographic bounds dynamically
+  const resizeOrtho = () => {
+    const width = canvas.clientWidth;
+    const height = canvas.clientHeight;
+    const ratio = width / height;
+    const orthoSize = 3;
 
-    // Set initial position and rotation to face +X (like left to right pages)
-    camera.position = new BABYLON.Vector3(10.0, 4.0, 0.0); 
-    camera.rotation = new BABYLON.Vector3(0, -Math.PI / 2, 0);
+    camera.orthoLeft = -orthoSize * ratio;
+    camera.orthoRight = orthoSize * ratio;
+    camera.orthoTop = orthoSize;
+    camera.orthoBottom = -orthoSize;
+  };
+  resizeOrtho();
+  window.addEventListener("resize", resizeOrtho);
 
-    // Set orthographic bounds
-    const resizeOrtho = () => {
-        const width = canvas.clientWidth;
-        const height = canvas.clientHeight;
-        const ratio = width / height;
-        const orthoSize = 3;
+  // 🔒 Lock rotation
+  camera.alpha = 0;
+  camera.beta = Math.PI / 2;
+  camera.lowerAlphaLimit = camera.alpha;
+  camera.upperAlphaLimit = camera.alpha;
+  camera.lowerBetaLimit = camera.beta;
+  camera.upperBetaLimit = camera.beta;
 
-        camera.orthoLeft = -orthoSize * ratio;
-        camera.orthoRight = orthoSize * ratio;
-        camera.orthoTop = orthoSize;
-        camera.orthoBottom = -orthoSize;
-    };
-    resizeOrtho();
-    window.addEventListener("resize", resizeOrtho);
+  // 🔒 Lock zoom
+  //camera.radius = 45;
+  //camera.lowerRadiusLimit = camera.radius;
+  //camera.upperRadiusLimit = camera.radius;
 
-    // Disable all mouse controls
-    camera.inputs.clear();
+  // ✅ Allow vertical panning only
+  camera.panningAxis = new BABYLON.Vector3(0, 1, 0);
+  camera.panningSensibility = 1000; // higher = slower scroll
+  camera.useAutoRotationBehavior = false;
 
-    // Enable only up/down keyboard movement
-    camera.keysUp = [87, 38];    // W or ↑
-    camera.keysDown = [83, 40];  // S or ↓
-    camera.keysLeft = [];
-    camera.keysRight = [];
+  // ❌ Disable zooming
+  camera.wheelPrecision = 0;
+  camera.zoomingSensibility = 0;
 
-    // Mouse wheel scroll = vertical motion
-    canvas.addEventListener("wheel", (e) => {
-        //e.preventDefault();
-        const scrollAmount = e.deltaY * 0.005;
-        camera.position.y -= scrollAmount;
-    }, { passive: false });
+  // 🖱️ Optional: enable panning on left click instead of right
+  camera._panningMouseButton = 0;
 
+  // 🎯 Ensure good scroll experience
+  camera.attachControl(canvas, true);
+  //camera.inputs.attached.mouse.buttons = [0]; // Left click only
+  scene.activeCamera = camera;
 
-
-
-    // ✅ Handle touch scroll (vertical movement only)
-  let lastTouchY = null;
-
-  canvas.addEventListener("touchstart", (e) => {
-    if (e.touches.length === 1) {
-      lastTouchY = e.touches[0].clientY;
-    }
-  });
-
-  canvas.addEventListener("touchmove", (e) => {
-    if (e.touches.length === 1 && lastTouchY !== null) {
-      const currentY = e.touches[0].clientY;
-      const deltaY = currentY - lastTouchY;
-      camera.position.y += deltaY * 0.02; // adjust scroll speed here
-      lastTouchY = currentY;
-      e.preventDefault(); // Prevent browser scrolling
-    }
-  });
-
-  canvas.addEventListener("touchend", () => {
-    lastTouchY = null;
-  });
-
-
-
-
-
-    // Attach and activate camera
-    camera.attachControl(canvas, false);
-    scene.activeCamera = camera;
-
-    return camera;
+  return camera;
 }
