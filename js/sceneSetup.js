@@ -38,5 +38,24 @@ export function createScene(engine) {
     //scene.clearColor = new BABYLON.Color4(0.086, 0.086, 0.086, 1.0);  // Transparent background
     scene.clearColor = new BABYLON.Color4(0.0, 0.0, 0.0, 0.0); 
     //scene.clearColor = new BABYLON.Color4(0.1, 0.1, 0.1, 1.0); 
+
+
+    // ✨ Add FXAA antialiasing pipeline
+    scene.onReadyObservable.add(() => {
+        if (scene.activeCamera) {
+            const pipeline = new BABYLON.DefaultRenderingPipeline(
+                "defaultPipeline",
+                true,
+                scene,
+                [scene.activeCamera]
+            );
+            pipeline.samples = 4;
+            pipeline.fxaaEnabled = true;
+        }
+    });
+
+
+
+
     return scene;
 }

@@ -3,16 +3,17 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Home</title>
+  <title>Projects</title>
   <link rel="stylesheet" href="./css/style.css" />
 
   <!-- BabylonJS -->
   <script src="https://preview.babylonjs.com/babylon.js"></script>
-  <script src="https://preview.babylonjs.com/Oimo.js"></script> <!-- or Cannon.js -->
+  <script src="https://preview.babylonjs.com/Oimo.js"></script>
+  <script src="https://preview.babylonjs.com/loaders/babylonjs.loaders.min.js"></script>
 </head>
 
 <body>
-  <!-- These will be loaded dynamically -->
+  <!-- Shared header/footer -->
   <header></header>
   <main>
     <canvas id="canvas"></canvas>
@@ -23,16 +24,12 @@
     import { initializeEngine, createScene } from './js/sceneSetup.js';
     import { setupCamera } from './js/cameraSetup.js';
     import { setupLights } from './js/lightSetup.js';
+    import { setupInputControls } from './js/inputControls.js';
     import { loadMeshes } from './js/meshSetup.js';
     import { setupInteractions } from './js/interactions.js';
-    import { setupInputControls } from './js/inputControls.js';
+    //import { loadProjects } from './js/projectLoader.js'; // ✅ NEW
 
-    //real time video
-    import { makeVideoTV } from './js/tvHandler.js';
-
-
-
-    // Load header & footer from separate HTML files
+    // Load header & footer
     fetch("header.html").then(res => res.text()).then(data => {
       document.querySelector("header").innerHTML = data;
     });
@@ -40,44 +37,39 @@
       document.querySelector("footer").innerHTML = data;
     });
 
-
-
-
-
-
-
-
-
     const canvas = document.getElementById("canvas");
     const engine = initializeEngine(canvas);
-
-
-    //engine.setHardwareScalingLevel(1);
-    //scene.getEngine().samples = 4; // or 8
-
-
     const scene = createScene(engine);
     const camera = setupCamera(scene, canvas);
     setupLights(scene);
 
 
-    
 
-    loadMeshes(scene, "home.babylon").then((meshes) => {
+    // ✅ Load project cards from JSON + Blender template
+    //await loadProjects(scene);
+    /*
+    loadMeshes(scene, "projects.babylon").then((meshes) => {
       setupInteractions(meshes, scene);
-      makeVideoTV(scene, "creokala_tv", "creokala_anim.mp4");
-      makeVideoTV(scene, "vjti_tv", "3d_virtual_campus_demo_10001-1135.mp4");
+      
     });
+    */
+
+    async function loadAndSetupScene() {
+            //await artworksLoaded; 
+            const cubes1 = await loadMeshes(scene, "base.babylon");
+            const cubes = await loadMeshes(scene, "projects.babylon");  // Load main scene
+            setupInteractions(cubes, scene);
+
+            
+            }
+
+    loadAndSetupScene(); // Call the async function
+
+
+
+
 
     setupInputControls(scene, camera, canvas, { min: -16, max: 5 });
-
-
-
-
-
-
-
-
 
 
 

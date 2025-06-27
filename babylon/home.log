@@ -115,197 +115,182 @@ Exporter version: 3.3.1, Blender version: 3.6.1
 	processing begun of mesh:  text
 		processing begun of material:  text_main
 		registered as also a user of material:  text_main
-		num positions      :  7202
-		num normals        :  7202
+		num positions      :  632
+		num normals        :  632
 		num tangents       :  0
 		num uvs            :  0
 		num uvs2           :  0
 		num colors         :  0
-		num triangles      :  7167
+		num triangles      :  604
 	processing begun of mesh:  text.005
 		processing begun of material:  Text Colour
-		num positions      :  6538
-		num normals        :  6538
+		num positions      :  985
+		num normals        :  985
 		num tangents       :  0
 		num uvs            :  0
 		num uvs2           :  0
 		num colors         :  0
-		num triangles      :  6517
-		WARNING: # of 0 area faces found:  1
+		num triangles      :  963
 	processing begun of mesh:  text.006
 		processing begun of material:  Text Colour
 		registered as also a user of material:  Text Colour
-		num positions      :  6594
-		num normals        :  6594
+		num positions      :  987
+		num normals        :  987
 		num tangents       :  0
 		num uvs            :  0
 		num uvs2           :  0
 		num colors         :  0
-		num triangles      :  6577
-		WARNING: # of 0 area faces found:  1
+		num triangles      :  967
 	processing begun of mesh:  text.007
 		processing begun of material:  Text Colour
 		registered as also a user of material:  Text Colour
-		num positions      :  5290
-		num normals        :  5290
+		num positions      :  452
+		num normals        :  452
 		num tangents       :  0
 		num uvs            :  0
 		num uvs2           :  0
 		num colors         :  0
-		num triangles      :  5270
-		WARNING: # of 0 area faces found:  1
+		num triangles      :  438
 	processing begun of mesh:  text.004
 		processing begun of material:  text_main
 		registered as also a user of material:  text_main
-		num positions      :  52115
-		num normals        :  52115
+		num positions      :  17592
+		num normals        :  17592
 		num tangents       :  0
 		num uvs            :  0
 		num uvs2           :  0
 		num colors         :  0
-		num triangles      :  51917
-		WARNING: # of 0 area faces found:  14
+		num triangles      :  17378
 	processing begun of mesh:  text.008
 		processing begun of material:  text_main
 		registered as also a user of material:  text_main
-		num positions      :  5145
-		num normals        :  5145
+		num positions      :  462
+		num normals        :  462
 		num tangents       :  0
 		num uvs            :  0
 		num uvs2           :  0
 		num colors         :  0
-		num triangles      :  5123
+		num triangles      :  436
 	processing begun of mesh:  text.011
 		processing begun of material:  text_main
 		registered as also a user of material:  text_main
-		num positions      :  10083
-		num normals        :  10083
+		num positions      :  1123
+		num normals        :  1123
 		num tangents       :  0
 		num uvs            :  0
 		num uvs2           :  0
 		num colors         :  0
-		num triangles      :  10048
+		num triangles      :  1087
 	processing begun of mesh:  text.012
 		processing begun of material:  text_main
 		registered as also a user of material:  text_main
-		num positions      :  9658
-		num normals        :  9658
+		num positions      :  1235
+		num normals        :  1235
 		num tangents       :  0
 		num uvs            :  0
 		num uvs2           :  0
 		num colors         :  0
-		num triangles      :  9627
-		WARNING: # of 0 area faces found:  2
+		num triangles      :  1207
 	processing begun of mesh:  text.013
 		processing begun of material:  text_main
 		registered as also a user of material:  text_main
-		num positions      :  15537
-		num normals        :  15537
+		num positions      :  1418
+		num normals        :  1418
 		num tangents       :  0
 		num uvs            :  0
 		num uvs2           :  0
 		num colors         :  0
-		num triangles      :  15460
-		WARNING: # of 0 area faces found:  4
+		num triangles      :  1348
 	processing begun of mesh:  text.014
 		processing begun of material:  text_main
 		registered as also a user of material:  text_main
-		num positions      :  8603
-		num normals        :  8603
+		num positions      :  682
+		num normals        :  682
 		num tangents       :  0
 		num uvs            :  0
 		num uvs2           :  0
 		num colors         :  0
-		num triangles      :  8573
-		WARNING: # of 0 area faces found:  5
+		num triangles      :  654
 	processing begun of mesh:  text.009
 		processing begun of material:  text_main
 		registered as also a user of material:  text_main
-		num positions      :  40956
-		num normals        :  40956
+		num positions      :  13226
+		num normals        :  13226
 		num tangents       :  0
 		num uvs            :  0
 		num uvs2           :  0
 		num colors         :  0
-		num triangles      :  40823
-		WARNING: # of 0 area faces found:  5
+		num triangles      :  13076
 	processing begun of mesh:  text.015
 		processing begun of material:  text_main
 		registered as also a user of material:  text_main
-		num positions      :  42039
-		num normals        :  42039
+		num positions      :  14133
+		num normals        :  14133
 		num tangents       :  0
 		num uvs            :  0
 		num uvs2           :  0
 		num colors         :  0
-		num triangles      :  41867
-		WARNING: # of 0 area faces found:  5
+		num triangles      :  13957
 	processing begun of mesh:  text.016
 		processing begun of material:  text_main
 		registered as also a user of material:  text_main
-		num positions      :  50459
-		num normals        :  50459
+		num positions      :  16897
+		num normals        :  16897
 		num tangents       :  0
 		num uvs            :  0
 		num uvs2           :  0
 		num colors         :  0
-		num triangles      :  50254
-		WARNING: # of 0 area faces found:  9
+		num triangles      :  16681
 	processing begun of mesh:  Plane.001
 		processing begun of material:  Shelves
 		registered as also a user of material:  Shelves
-		Custom split normals with tangents being used
-		num positions      :  262
-		num normals        :  262
-		num tangents       :  1048
-		num uvs            :  524
+		num positions      :  8
+		num normals        :  8
+		num tangents       :  0
+		num uvs            :  16
 		num uvs2           :  0
 		num colors         :  0
-		num triangles      :  108
+		num triangles      :  12
 	processing begun of mesh:  Plane.002
 		processing begun of material:  Shelves
 		registered as also a user of material:  Shelves
-		Custom split normals with tangents being used
-		num positions      :  271
-		num normals        :  271
-		num tangents       :  1084
-		num uvs            :  542
+		num positions      :  8
+		num normals        :  8
+		num tangents       :  0
+		num uvs            :  16
 		num uvs2           :  0
 		num colors         :  0
-		num triangles      :  108
+		num triangles      :  12
 	processing begun of mesh:  Plane.003
 		processing begun of material:  Shelves
 		registered as also a user of material:  Shelves
-		Custom split normals with tangents being used
-		num positions      :  271
-		num normals        :  271
-		num tangents       :  1084
-		num uvs            :  542
+		num positions      :  8
+		num normals        :  8
+		num tangents       :  0
+		num uvs            :  16
 		num uvs2           :  0
 		num colors         :  0
-		num triangles      :  108
+		num triangles      :  12
 	processing begun of mesh:  Plane.004
 		processing begun of material:  Shelves
 		registered as also a user of material:  Shelves
-		Custom split normals with tangents being used
-		num positions      :  271
-		num normals        :  271
-		num tangents       :  1084
-		num uvs            :  542
+		num positions      :  8
+		num normals        :  8
+		num tangents       :  0
+		num uvs            :  16
 		num uvs2           :  0
 		num colors         :  0
-		num triangles      :  108
+		num triangles      :  12
 	processing begun of mesh:  Plane.005
 		processing begun of material:  Shelves
 		registered as also a user of material:  Shelves
-		Custom split normals with tangents being used
-		num positions      :  271
-		num normals        :  271
-		num tangents       :  1084
-		num uvs            :  542
+		num positions      :  8
+		num normals        :  8
+		num tangents       :  0
+		num uvs            :  16
 		num uvs2           :  0
 		num colors         :  0
-		num triangles      :  108
+		num triangles      :  12
 	processing begun of mesh:  creokala_tv
 		processing begun of material:  Videos
 		num positions      :  4
@@ -332,7 +317,7 @@ Exporter version: 3.3.1, Blender version: 3.6.1
 			Baking texture, type: EMIT, mapped using: UVMap
 			processing texture vjti_1_baked_EMIT
 			emissive channel baked
-			bake time:  0 min, 0.9675 secs
+			bake time:  0 min, 1.06 secs
 		num positions      :  4
 		num normals        :  4
 		num tangents       :  0
@@ -500,7 +485,7 @@ Exporter version: 3.3.1, Blender version: 3.6.1
 			WARNING: unsupported node type(ShaderNodeBump) will trigger baking
 			processing texture unity_tex
 			processing texture unity_tex
-			bake time:  0 min, 0.0017 secs
+			bake time:  0 min, 0.0098 secs
 		Custom split normals with tangents being used
 		num positions      :  227
 		num normals        :  227
@@ -620,4 +605,4 @@ Exporter version: 3.3.1, Blender version: 3.6.1
 	writing mesh:  Cube_blender.002
 ========= Writing of JSON file completed =========
 ========= end of processing =========
-elapsed time:  0 min, 7.51 secs
+elapsed time:  0 min, 3.57 secs

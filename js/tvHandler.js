@@ -31,7 +31,7 @@ export function makeVideoTV(scene, meshName, videoFile, options = {}) {
     
     
     if (autoplay) {
-      videoTexture.video.pause();
+      videoTexture.video.play();
     }
   
     const videoMat = new BABYLON.StandardMaterial(materialName, scene);

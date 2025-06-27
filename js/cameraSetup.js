@@ -1,6 +1,7 @@
 export function setupCamera(scene, canvas) {
   const camera = new BABYLON.ArcRotateCamera("camera", 0, Math.PI / 2, 10, new BABYLON.Vector3(-1.0, 4.0, 0.0), scene);
   camera.mode = BABYLON.Camera.ORTHOGRAPHIC_CAMERA;
+  //camera.fov=0.5;
 
   // Set orthographic bounds dynamically
   const resizeOrtho = () => {
@@ -29,7 +30,7 @@ export function setupCamera(scene, canvas) {
   //camera.radius = 45;
   //camera.lowerRadiusLimit = camera.radius;
   //camera.upperRadiusLimit = camera.radius;
-
+       
   // ✅ Allow vertical panning only
   camera.panningAxis = new BABYLON.Vector3(0, 1, 0);
   camera.panningSensibility = 1000; // higher = slower scroll
@@ -40,7 +41,8 @@ export function setupCamera(scene, canvas) {
   camera.zoomingSensibility = 0;
 
   // 🖱️ Optional: enable panning on left click instead of right
-  camera._panningMouseButton = 0;
+  camera._panningMouseButton = 1;
+  camera._useCtrlForPanning = false;
 
   // 🎯 Ensure good scroll experience
   camera.attachControl(canvas, true);
