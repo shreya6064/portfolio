@@ -885,13 +885,13 @@ Exporter version: 3.3.1, Blender version: 3.6.1
 		num triangles      :  188
 	processing begun of mesh:  text
 		processing begun of material:  text_main.001
-		num positions      :  779
-		num normals        :  779
+		num positions      :  78
+		num normals        :  78
 		num tangents       :  0
 		num uvs            :  0
 		num uvs2           :  0
 		num colors         :  0
-		num triangles      :  776
+		num triangles      :  76
 	processing begun of mesh:  frame
 		processing begun of material:  Grey
 		processing begun of material:  White
@@ -985,4 +985,4 @@ Exporter version: 3.3.1, Blender version: 3.6.1
 	writing mesh:  frame
 ========= Writing of JSON file completed =========
 ========= end of processing =========
-elapsed time:  0 min, 1.7029 secs
+elapsed time:  0 min, 2.8842 secs

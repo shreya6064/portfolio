@@ -63,8 +63,8 @@
 
     
 
-    loadMeshes(scene, "home.babylon").then((meshes) => {
-      setupInteractions(meshes, scene);
+    loadMeshes(scene, "home.babylon").then(({ dragableMeshes }) => {
+      setupInteractions(dragableMeshes, scene);
       makeVideoTV(scene, "creokala_tv", "creokala_anim.mp4");
       makeVideoTV(scene, "vjti_tv", "3d_virtual_campus_demo_10001-1135.mp4");
     });

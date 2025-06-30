@@ -24,13 +24,13 @@ Exporter version: 3.3.1, Blender version: 3.6.1
 	processing begun of mesh:  text.001
 		processing begun of material:  text_main
 		registered as also a user of material:  text_main
-		num positions      :  1647
-		num normals        :  1647
+		num positions      :  1906
+		num normals        :  1906
 		num tangents       :  0
 		num uvs            :  0
 		num uvs2           :  0
 		num colors         :  0
-		num triangles      :  1633
+		num triangles      :  1884
 	processing begun of mesh:  text.005
 		processing begun of material:  text_main
 		registered as also a user of material:  text_main
@@ -51,7 +51,7 @@ Exporter version: 3.3.1, Blender version: 3.6.1
 		num uvs2           :  0
 		num colors         :  0
 		num triangles      :  108
-	processing begun of node:  DescriptionAnchor
+	processing begun of node:  Empty
 ========= Writing of JSON file started =========
 	writing mesh:  text
 	writing mesh:  text.001
@@ -59,4 +59,4 @@ Exporter version: 3.3.1, Blender version: 3.6.1
 	writing mesh:  Plane.001
 ========= Writing of JSON file completed =========
 ========= end of processing =========
-elapsed time:  0 min, 0.3185 secs
+elapsed time:  0 min, 0.2216 secs

@@ -10,11 +10,35 @@
   <script src="https://preview.babylonjs.com/babylon.js"></script>
   <script src="https://preview.babylonjs.com/Oimo.js"></script>
   <script src="https://preview.babylonjs.com/loaders/babylonjs.loaders.min.js"></script>
+
+  <style>
+    .tag-buttons {
+      text-align: center;
+      margin: 1rem;
+    }
+
+    .tag-buttons button {
+      margin: 0.3rem;
+      padding: 0.5rem 1rem;
+      background: #ffffff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .tag-buttons button.active {
+      background: #222;
+      color: rgb(0, 0, 0);
+    }
+  </style>
+
+
 </head>
 
 <body>
   <!-- Shared header/footer -->
   <header></header>
+  <div class="tag-buttons" id="tag-buttons"></div>
   <main>
     <canvas id="canvas"></canvas>
   </main>
@@ -43,6 +67,26 @@
     const camera = setupCamera(scene, canvas);
     setupLights(scene);
 
+    let taggedGroups = {};
+
+
+    function filterByTag(tag) {
+      Object.entries(taggedGroups).forEach(([key, groups]) => {
+        groups.forEach(mesh => mesh.setEnabled(false));
+      });
+
+      if (tag === "all") {
+        Object.values(taggedGroups).flat().forEach(mesh => mesh.setEnabled(true));
+      } else if (tag !== "none" && taggedGroups[tag]) {
+        taggedGroups[tag].forEach(mesh => mesh.setEnabled(true));
+    }
+
+      // Highlight active button
+      document.querySelectorAll(".tag-buttons button").forEach(btn => {
+        btn.classList.toggle("active", btn.dataset.tag === tag);
+      });
+    }
+
 
 
     // ✅ Load project cards from JSON + Blender template
@@ -54,16 +98,32 @@
     });
     */
 
-    async function loadAndSetupScene() {
-            //await artworksLoaded; 
-            const cubes1 = await loadMeshes(scene, "base.babylon");
-            const cubes = await loadMeshes(scene, "projects.babylon");  // Load main scene
-            setupInteractions(cubes, scene);
+    loadMeshes(scene, "projects.babylon").then(result => {
+      const { dragableMeshes, taggedGroups: tags } = result;
+      taggedGroups = tags;
 
-            
-            }
+     
 
-    loadAndSetupScene(); // Call the async function
+      setupInteractions(dragableMeshes, scene);
+
+       Object.values(taggedGroups).flat().forEach(mesh => mesh.setEnabled(false));
+
+      // 🧷 Build tag buttons dynamically
+      const tagContainer = document.getElementById("tag-buttons");
+      const allTags = ["all", "none", ...Object.keys(taggedGroups)];
+
+      allTags.forEach(tag => {
+        const btn = document.createElement("button");
+        btn.textContent = tag.charAt(0).toUpperCase() + tag.slice(1);
+        btn.dataset.tag = tag;
+        btn.addEventListener("click", () => filterByTag(tag));
+        tagContainer.appendChild(btn);
+      });
+
+      // Show all by default
+      filterByTag("all");
+    });
+
 
 
 

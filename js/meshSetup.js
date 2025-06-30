@@ -1,6 +1,7 @@
 export async function loadMeshes(scene, babylonFile) {
     const result = await BABYLON.SceneLoader.ImportMeshAsync("", "./babylon/", babylonFile, scene);
     const dragableMeshes = [];
+    const taggedGroups = {};
 
     result.meshes.forEach(mesh => {
         // Apply physics to cubes
@@ -24,7 +25,20 @@ export async function loadMeshes(scene, babylonFile) {
                 scene
             );
         }
+
+
+
+        if (mesh.metadata && mesh.metadata.tags) {
+            const tags = mesh.metadata.tags.split(',').map(t => t.trim().toLowerCase());
+            tags.forEach(tag => {
+                if (!taggedGroups[tag]) taggedGroups[tag] = [];
+                taggedGroups[tag].push(mesh);
+            });
+        }
+
+
+
     });
 
-    return dragableMeshes;
+    return { dragableMeshes, taggedGroups };
 }
