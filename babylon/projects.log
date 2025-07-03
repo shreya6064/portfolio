@@ -24,23 +24,43 @@ Exporter version: 3.3.1, Blender version: 3.6.1
 	processing begun of mesh:  text.001
 		processing begun of material:  text_main
 		registered as also a user of material:  text_main
-		num positions      :  1906
-		num normals        :  1906
+		num positions      :  1230
+		num normals        :  1230
 		num tangents       :  0
 		num uvs            :  0
 		num uvs2           :  0
 		num colors         :  0
-		num triangles      :  1884
+		num triangles      :  1212
 	processing begun of mesh:  text.005
 		processing begun of material:  text_main
 		registered as also a user of material:  text_main
-		num positions      :  5068
-		num normals        :  5068
+		num positions      :  11027
+		num normals        :  11027
 		num tangents       :  0
 		num uvs            :  0
 		num uvs2           :  0
 		num colors         :  0
-		num triangles      :  5016
+		num triangles      :  10905
+	processing begun of mesh:  text.002
+		processing begun of material:  text_main
+		registered as also a user of material:  text_main
+		num positions      :  1728
+		num normals        :  1728
+		num tangents       :  0
+		num uvs            :  0
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  1712
+	processing begun of mesh:  text.003
+		processing begun of material:  text_main
+		registered as also a user of material:  text_main
+		num positions      :  202
+		num normals        :  202
+		num tangents       :  0
+		num uvs            :  0
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  198
 	processing begun of mesh:  Plane.001
 		processing begun of material:  Shelves
 		Custom split normals with tangents being used
@@ -51,12 +71,71 @@ Exporter version: 3.3.1, Blender version: 3.6.1
 		num uvs2           :  0
 		num colors         :  0
 		num triangles      :  108
+	processing begun of mesh:  Plane.002
+		processing begun of material:  Shelves
+		registered as also a user of material:  Shelves
+		Custom split normals with tangents being used
+		num positions      :  271
+		num normals        :  271
+		num tangents       :  1084
+		num uvs            :  542
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  108
+	processing begun of mesh:  wall.001
+		processing begun of material:  idek.001
+		Custom split normals with tangents being used
+		num positions      :  323
+		num normals        :  323
+		num tangents       :  1292
+		num uvs            :  646
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  148
 	processing begun of node:  Empty
+	processing begun of mesh:  IMG_4061
+		processing begun of material:  IMG_4061
+			processing texture IMG_4061
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  IMG_4066
+		processing begun of material:  IMG_4066
+			processing texture IMG_4066
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  R7ML5376
+		processing begun of material:  R7ML5376
+			processing texture R7ML5376
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of node:  Empty.001
 ========= Writing of JSON file started =========
 	writing mesh:  text
 	writing mesh:  text.001
 	writing mesh:  text.005
+	writing mesh:  text.002
+	writing mesh:  text.003
 	writing mesh:  Plane.001
+	writing mesh:  Plane.002
+	writing mesh:  wall.001
+	writing mesh:  IMG_4061
+	writing mesh:  IMG_4066
+	writing mesh:  R7ML5376
 ========= Writing of JSON file completed =========
 ========= end of processing =========
-elapsed time:  0 min, 0.2216 secs
+elapsed time:  0 min, 0.3822 secs

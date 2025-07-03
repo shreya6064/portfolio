@@ -61,42 +61,62 @@
       document.querySelector("footer").innerHTML = data;
     });
 
+
+    
     const canvas = document.getElementById("canvas");
     const engine = initializeEngine(canvas);
     const scene = createScene(engine);
     const camera = setupCamera(scene, canvas);
     setupLights(scene);
 
+
+
     let taggedGroups = {};
 
 
     function filterByTag(tag) {
-      Object.entries(taggedGroups).forEach(([key, groups]) => {
-        groups.forEach(mesh => mesh.setEnabled(false));
-      });
+      const spacingY = 3.5;
+      let currentY = 3;
+
+      // Hide everything first
+      Object.values(taggedGroups).flat().forEach(mesh => mesh.setEnabled(false));
+
+      // Get active group
+      let toShow = [];
 
       if (tag === "all") {
-        Object.values(taggedGroups).flat().forEach(mesh => mesh.setEnabled(true));
+          //toShow = Object.values(taggedGroups).flat();
+          const seen = new Set();
+          Object.values(taggedGroups).flat().forEach(mesh => {
+            if (!seen.has(mesh)) {
+              seen.add(mesh);
+              toShow.push(mesh);
+            }
+          });
       } else if (tag !== "none" && taggedGroups[tag]) {
-        taggedGroups[tag].forEach(mesh => mesh.setEnabled(true));
-    }
+          toShow = taggedGroups[tag];
+      }
 
-      // Highlight active button
+      // Show & reposition root-level project empties
+      for (const root of toShow) {
+        //console.log(root.name);
+          root.setEnabled(true);
+          root.position.y = currentY;
+          currentY -= spacingY;
+      }
+
+
+
+      // Optional: update button state
       document.querySelectorAll(".tag-buttons button").forEach(btn => {
-        btn.classList.toggle("active", btn.dataset.tag === tag);
+          btn.classList.toggle("active", btn.dataset.tag === tag);
       });
     }
 
 
 
-    // ✅ Load project cards from JSON + Blender template
-    //await loadProjects(scene);
-    /*
-    loadMeshes(scene, "projects.babylon").then((meshes) => {
-      setupInteractions(meshes, scene);
-      
-    });
-    */
+
+    
 
     loadMeshes(scene, "projects.babylon").then(result => {
       const { dragableMeshes, taggedGroups: tags } = result;
@@ -129,7 +149,7 @@
 
 
 
-    setupInputControls(scene, camera, canvas, { min: -16, max: 5 });
+    setupInputControls(scene, camera, canvas, { min: -16, max: 16 });
 
 
 

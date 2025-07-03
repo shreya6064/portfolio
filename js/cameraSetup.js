@@ -1,5 +1,7 @@
 export function setupCamera(scene, canvas) {
-  const camera = new BABYLON.ArcRotateCamera("camera", 0, Math.PI / 2, 10, new BABYLON.Vector3(-1.0, 4.0, 0.0), scene);
+
+  /*
+  const camera = new BABYLON.ArcRotateCamera("camera", 0, Math.PI / 2, 10, new BABYLON.Vector3(-0.5, 4.0, 0.0), scene);
   camera.mode = BABYLON.Camera.ORTHOGRAPHIC_CAMERA;
   //camera.fov=0.5;
 
@@ -17,6 +19,22 @@ export function setupCamera(scene, canvas) {
   };
   resizeOrtho();
   window.addEventListener("resize", resizeOrtho);
+
+  */
+
+  const camera = new BABYLON.ArcRotateCamera(
+  "camera",
+  0,
+  Math.PI / 2,
+  10,
+  new BABYLON.Vector3(40.0, 5.0, 0.0),
+  scene
+);
+
+// ❌ DO NOT set camera.mode = ORTHOGRAPHIC
+// ✅ Instead: set a very small FOV (in radians)
+  camera.fov = BABYLON.Tools.ToRadians(5); // ~5° field of view = almost ortho look
+
 
   // 🔒 Lock rotation
   camera.alpha = 0;
