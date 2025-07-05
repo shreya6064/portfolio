@@ -38,7 +38,7 @@
 <body>
   <!-- Shared header/footer -->
   <header></header>
-  <div class="tag-buttons" id="tag-buttons"></div>
+  
   <main>
     <canvas id="canvas"></canvas>
   </main>
@@ -72,14 +72,15 @@
 
 
     let taggedGroups = {};
+    let projectEmpties = [];
 
 
     function filterByTag(tag) {
       const spacingY = 3.5;
-      let currentY = 3;
+      let currentY = 2;
 
       // Hide everything first
-      Object.values(taggedGroups).flat().forEach(mesh => mesh.setEnabled(false));
+      projectEmpties.forEach(mesh => mesh.setEnabled(false));
 
       // Get active group
       let toShow = [];
@@ -99,18 +100,17 @@
 
       // Show & reposition root-level project empties
       for (const root of toShow) {
-        //console.log(root.name);
-          root.setEnabled(true);
-          root.position.y = currentY;
-          currentY -= spacingY;
+        //.log(root.name);
+        if (root.name.startsWith("Empty")) {
+            root.setEnabled(true);
+            root.position.y = currentY;
+            currentY -= spacingY;
+        }
       }
 
 
 
-      // Optional: update button state
-      document.querySelectorAll(".tag-buttons button").forEach(btn => {
-          btn.classList.toggle("active", btn.dataset.tag === tag);
-      });
+      
     }
 
 
@@ -119,15 +119,21 @@
     
 
     loadMeshes(scene, "projects.babylon").then(result => {
-      const { dragableMeshes, taggedGroups: tags } = result;
+      const { dragableMeshes, taggedGroups: tags, tagCubes, projectEmpties: empties } = result;
       taggedGroups = tags;
+      projectEmpties = empties;
 
      
 
       setupInteractions(dragableMeshes, scene);
 
-       Object.values(taggedGroups).flat().forEach(mesh => mesh.setEnabled(false));
+      //Object.values(taggedGroups).flat().forEach(mesh => mesh.setEnabled(false));
+      projectEmpties.forEach(mesh => mesh.setEnabled(false));
 
+
+
+
+      /*
       // 🧷 Build tag buttons dynamically
       const tagContainer = document.getElementById("tag-buttons");
       const allTags = ["all", "none", ...Object.keys(taggedGroups)];
@@ -139,6 +145,49 @@
         btn.addEventListener("click", () => filterByTag(tag));
         tagContainer.appendChild(btn);
       });
+      */
+
+       // 👇 Setup 3D cube-tag interaction
+    tagCubes.forEach(cube => {
+      //.log(`Cube: ${cube.name}`, cube.metadata);
+      cube.isPickable = true;
+      //const tag = cube.metadata?.tags.toLowerCase();
+      const tag = cube.name.split("_")[2]?.toLowerCase();
+      //console.log(tag);
+
+      cube.actionManager = new BABYLON.ActionManager(scene);
+      cube.actionManager.registerAction(
+        new BABYLON.ExecuteCodeAction(BABYLON.ActionManager.OnPickTrigger, () => {
+          // 🔄 Reset visuals of all cubes
+          tagCubes.forEach(c => {
+            const isSelected = c === cube;
+            
+            // Emissive highlight or none
+            c.material.emissiveColor = isSelected ? BABYLON.Color3.Teal() : BABYLON.Color3.Black();
+
+            
+
+
+            //c.material.emissiveColor = BABYLON.Color3.Black();
+            //c.position.y += 0.1; // reset to unpressed
+          });
+
+          // 🎯 Highlight clicked cube
+          //cube.material.emissiveColor = BABYLON.Color3.Teal();
+          cube.position.y += 0.1;
+
+          // 🧼 Handle tag filtering
+          if (tag && taggedGroups[tag]) {
+            filterByTag(tag);
+          }
+        })
+      );
+    });
+
+
+
+
+
 
       // Show all by default
       filterByTag("all");
