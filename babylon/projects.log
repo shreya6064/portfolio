@@ -23,14 +23,13 @@ Exporter version: 3.3.1, Blender version: 3.6.1
 		num triangles      :  519
 	processing begun of mesh:  Plane.003
 		processing begun of material:  Shelves
-		Custom split normals with tangents being used
-		num positions      :  271
-		num normals        :  271
-		num tangents       :  1084
-		num uvs            :  542
+		num positions      :  8
+		num normals        :  8
+		num tangents       :  0
+		num uvs            :  16
 		num uvs2           :  0
 		num colors         :  0
-		num triangles      :  108
+		num triangles      :  12
 	processing begun of mesh:  wall.001
 		processing begun of material:  idek.001
 		Custom split normals with tangents being used
@@ -401,7 +400,7 @@ Exporter version: 3.3.1, Blender version: 3.6.1
 		num uvs2           :  0
 		num colors         :  0
 		num triangles      :  12467
-	processing begun of mesh:  Cube_tag_blender_tech
+	processing begun of mesh:  Cube_tag_blender_tech.001
 		processing begun of material:  blender
 			processing texture blender_tex
 		Custom split normals with tangents being used
@@ -412,7 +411,7 @@ Exporter version: 3.3.1, Blender version: 3.6.1
 		num uvs2           :  0
 		num colors         :  0
 		num triangles      :  188
-	processing begun of mesh:  Cube_tag_c#_tech
+	processing begun of mesh:  Cube_tag_c#_tech.001
 		processing begun of material:  csharp
 			processing texture csharp_tex
 		Custom split normals with tangents being used
@@ -423,6 +422,225 @@ Exporter version: 3.3.1, Blender version: 3.6.1
 		num uvs2           :  0
 		num colors         :  0
 		num triangles      :  188
+	processing begun of mesh:  Cube_tag_meshroom_tech
+		processing begun of material:  meshroom
+			processing texture meshroom_tex
+		Custom split normals with tangents being used
+		num positions      :  219
+		num normals        :  219
+		num tangents       :  876
+		num uvs            :  438
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  188
+	processing begun of mesh:  Cube_tag_blender_tech
+		processing begun of material:  blender.001
+			processing texture blender_tex
+		Custom split normals with tangents being used
+		num positions      :  219
+		num normals        :  219
+		num tangents       :  876
+		num uvs            :  438
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  188
+	processing begun of mesh:  Cube_tag_babylonjs_tech
+		processing begun of material:  bjs
+			processing texture bhjs_tex
+		Custom split normals with tangents being used
+		num positions      :  219
+		num normals        :  219
+		num tangents       :  876
+		num uvs            :  438
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  188
+	processing begun of mesh:  Cube_tag_c#_tech
+		processing begun of material:  csharp.001
+			processing texture csharp_tex
+		Custom split normals with tangents being used
+		num positions      :  219
+		num normals        :  219
+		num tangents       :  876
+		num uvs            :  438
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  188
+	processing begun of mesh:  Cube_tag_python_tech
+		processing begun of material:  py
+			processing texture py_tex
+		Custom split normals with tangents being used
+		num positions      :  312
+		num normals        :  312
+		num tangents       :  1248
+		num uvs            :  624
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  188
+	processing begun of mesh:  Cube_tag_js_tech
+		processing begun of material:  js
+			processing texture js_tex
+		Custom split normals with tangents being used
+		num positions      :  219
+		num normals        :  219
+		num tangents       :  876
+		num uvs            :  438
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  188
+	processing begun of mesh:  Cube_tag_unity_tech
+		processing begun of material:  unity
+			WARNING: unsupported node type(ShaderNodeBump) will trigger baking
+			processing texture unity_tex
+			processing texture unity_tex
+			bake time:  0 min, 0.009 secs
+		Custom split normals with tangents being used
+		num positions      :  219
+		num normals        :  219
+		num tangents       :  876
+		num uvs            :  438
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  188
+	processing begun of mesh:  Cube_tag_java_tech
+		processing begun of material:  java
+			processing texture java_tex
+		Custom split normals with tangents being used
+		num positions      :  219
+		num normals        :  219
+		num tangents       :  876
+		num uvs            :  438
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  188
+	processing begun of mesh:  Cube_tag_substance_tech
+		processing begun of material:  substance
+			processing texture sd_tex
+		Custom split normals with tangents being used
+		num positions      :  219
+		num normals        :  219
+		num tangents       :  876
+		num uvs            :  438
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  188
+	processing begun of mesh:  Cube_tag_ts_tech
+		processing begun of material:  ts
+			processing texture ts_tex
+		Custom split normals with tangents being used
+		num positions      :  219
+		num normals        :  219
+		num tangents       :  876
+		num uvs            :  438
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  188
+	processing begun of mesh:  Cube_tag_mongodb_tech
+		processing begun of material:  mongo
+			processing texture mongo_tex
+		Custom split normals with tangents being used
+		num positions      :  219
+		num normals        :  219
+		num tangents       :  876
+		num uvs            :  438
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  188
+	processing begun of mesh:  Cube_tag_react_tech
+		processing begun of material:  react
+			processing texture react_tex
+		Custom split normals with tangents being used
+		num positions      :  219
+		num normals        :  219
+		num tangents       :  876
+		num uvs            :  438
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  188
+	processing begun of mesh:  Cube_tag_pytorch_tech
+		processing begun of material:  pytorch
+			processing texture pytorch_tex
+		Custom split normals with tangents being used
+		num positions      :  219
+		num normals        :  219
+		num tangents       :  876
+		num uvs            :  438
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  188
+	processing begun of mesh:  Cube_tag_pandas_tech
+		processing begun of material:  pandas
+			processing texture pandas_tex
+		Custom split normals with tangents being used
+		num positions      :  219
+		num normals        :  219
+		num tangents       :  876
+		num uvs            :  438
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  188
+	processing begun of mesh:  Cube_tag_flask_tech
+		processing begun of material:  flask
+			processing texture flask_tex
+		Custom split normals with tangents being used
+		num positions      :  219
+		num normals        :  219
+		num tangents       :  876
+		num uvs            :  438
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  188
+	processing begun of mesh:  Cube_tag_tensorflow_tech
+		processing begun of material:  tf
+			processing texture tf_tex
+		Custom split normals with tangents being used
+		num positions      :  219
+		num normals        :  219
+		num tangents       :  876
+		num uvs            :  438
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  188
+	processing begun of mesh:  Cube_tag_processing_tech
+		processing begun of material:  processing
+			processing texture processing_tex
+		Custom split normals with tangents being used
+		num positions      :  216
+		num normals        :  216
+		num tangents       :  864
+		num uvs            :  432
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  188
+	processing begun of mesh:  wall.002
+		processing begun of material:  White??
+		num positions      :  29
+		num normals        :  29
+		num tangents       :  0
+		num uvs            :  58
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  12
+	processing begun of mesh:  wall.003
+		processing begun of material:  White??
+		registered as also a user of material:  White??
+		num positions      :  29
+		num normals        :  29
+		num tangents       :  0
+		num uvs            :  58
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  12
+	processing begun of mesh:  wall.004
+		processing begun of material:  White??
+		registered as also a user of material:  White??
+		num positions      :  29
+		num normals        :  29
+		num tangents       :  0
+		num uvs            :  58
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  12
 ========= Writing of JSON file started =========
 	writing mesh:  text
 	writing mesh:  Plane.003
@@ -461,8 +679,28 @@ Exporter version: 3.3.1, Blender version: 3.6.1
 	writing mesh:  Plane.011
 	writing mesh:  text.020
 	writing mesh:  text.021
+	writing mesh:  Cube_tag_blender_tech.001
+	writing mesh:  Cube_tag_c#_tech.001
+	writing mesh:  Cube_tag_meshroom_tech
 	writing mesh:  Cube_tag_blender_tech
+	writing mesh:  Cube_tag_babylonjs_tech
 	writing mesh:  Cube_tag_c#_tech
+	writing mesh:  Cube_tag_python_tech
+	writing mesh:  Cube_tag_js_tech
+	writing mesh:  Cube_tag_unity_tech
+	writing mesh:  Cube_tag_java_tech
+	writing mesh:  Cube_tag_substance_tech
+	writing mesh:  Cube_tag_ts_tech
+	writing mesh:  Cube_tag_mongodb_tech
+	writing mesh:  Cube_tag_react_tech
+	writing mesh:  Cube_tag_pytorch_tech
+	writing mesh:  Cube_tag_pandas_tech
+	writing mesh:  Cube_tag_flask_tech
+	writing mesh:  Cube_tag_tensorflow_tech
+	writing mesh:  Cube_tag_processing_tech
+	writing mesh:  wall.002
+	writing mesh:  wall.003
+	writing mesh:  wall.004
 ========= Writing of JSON file completed =========
 ========= end of processing =========
-elapsed time:  0 min, 7.9803 secs
+elapsed time:  0 min, 3.8344 secs
