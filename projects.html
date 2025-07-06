@@ -71,46 +71,35 @@
 
 
 
-    let taggedGroups = {};
+    
     let projectEmpties = [];
+    let selectedTechTags = new Set();
+    let selectedSkillTags = new Set();
 
 
-    function filterByTag(tag) {
-      const spacingY = 3.5;
-      let currentY = 2;
+    function filterProjects(projects, techTags, skillTags) {
+      const spacingY = 2.8;
+      let currentY = 2.6;
 
-      // Hide everything first
-      projectEmpties.forEach(mesh => mesh.setEnabled(false));
+      projects.forEach(project => project.setEnabled(false));
 
-      // Get active group
-      let toShow = [];
+      let visible = projects.filter(project => {
+        const tech = (project.metadata?.tech || "").replace(/[{}]/g, '').split(',').map(t => t.trim().toLowerCase());
+        const skill = (project.metadata?.skills || "").replace(/[{}]/g, '').split(',').map(t => t.trim().toLowerCase());
 
-      if (tag === "all") {
-          //toShow = Object.values(taggedGroups).flat();
-          const seen = new Set();
-          Object.values(taggedGroups).flat().forEach(mesh => {
-            if (!seen.has(mesh)) {
-              seen.add(mesh);
-              toShow.push(mesh);
-            }
-          });
-      } else if (tag !== "none" && taggedGroups[tag]) {
-          toShow = taggedGroups[tag];
-      }
-
-      // Show & reposition root-level project empties
-      for (const root of toShow) {
-        //.log(root.name);
-        if (root.name.startsWith("Empty")) {
-            root.setEnabled(true);
-            root.position.y = currentY;
-            currentY -= spacingY;
-        }
-      }
+        //const techMatch = techTags.size === 0 || tech.some(tag => techTags.has(tag));
+        const techMatch = [...techTags].every(tag => tech.includes(tag));
+        const skillMatch = [...skillTags].every(tag => skill.includes(tag));
 
 
+        return techMatch && skillMatch;
+      });
 
-      
+      visible.forEach(project => {
+        project.setEnabled(true);
+        project.position.y = currentY;
+        currentY -= spacingY;
+      });
     }
 
 
@@ -119,8 +108,10 @@
     
 
     loadMeshes(scene, "projects.babylon").then(result => {
-      const { dragableMeshes, taggedGroups: tags, tagCubes, projectEmpties: empties } = result;
-      taggedGroups = tags;
+      //dragableMeshes, tagCubes, projectEmpties, techTagsMap, skillTagsMap
+      //const { dragableMeshes, taggedGroups: tags, tagCubes, projectEmpties: empties } = result;
+      const { dragableMeshes, tagCubes, projectEmpties: empties } = result;
+      
       projectEmpties = empties;
 
      
@@ -133,19 +124,6 @@
 
 
 
-      /*
-      // 🧷 Build tag buttons dynamically
-      const tagContainer = document.getElementById("tag-buttons");
-      const allTags = ["all", "none", ...Object.keys(taggedGroups)];
-
-      allTags.forEach(tag => {
-        const btn = document.createElement("button");
-        btn.textContent = tag.charAt(0).toUpperCase() + tag.slice(1);
-        btn.dataset.tag = tag;
-        btn.addEventListener("click", () => filterByTag(tag));
-        tagContainer.appendChild(btn);
-      });
-      */
 
        // 👇 Setup 3D cube-tag interaction
     tagCubes.forEach(cube => {
@@ -153,33 +131,60 @@
       cube.isPickable = true;
       //const tag = cube.metadata?.tags.toLowerCase();
       const tag = cube.name.split("_")[2]?.toLowerCase();
-      //console.log(tag);
+      //console.log("Cube found", tag)
+      const type = cube.name.split("_")[3]?.toLowerCase(); //tech or skill
+      
 
       cube.actionManager = new BABYLON.ActionManager(scene);
       cube.actionManager.registerAction(
         new BABYLON.ExecuteCodeAction(BABYLON.ActionManager.OnPickTrigger, () => {
-          // 🔄 Reset visuals of all cubes
+          
+
+
+          //const isSelected = type === 'tech' ? selectedTechTags.has(tag) : selectedSkillTags.has(tag);
+          
+
+          const tagSet = type === 'tech' ? selectedTechTags : selectedSkillTags;
+          const isSelected = tagSet.has(tag);
+
+          if (isSelected) {
+            tagSet.delete(tag);
+          } else {
+            tagSet.add(tag);
+          }
+
+
+
+
+
+
+
+
+
+
           tagCubes.forEach(c => {
-            const isSelected = c === cube;
-            
-            // Emissive highlight or none
-            c.material.emissiveColor = isSelected ? BABYLON.Color3.Teal() : BABYLON.Color3.Black();
-
-            
+              const cubeTag = c.name.split("_")[2]?.toLowerCase();
+              const cubeType = c.name.split("_")[3]?.toLowerCase();
+              const active = (cubeType === 'tech' && selectedTechTags.has(cubeTag)) || (cubeType === 'skill' && selectedSkillTags.has(cubeTag));
 
 
-            //c.material.emissiveColor = BABYLON.Color3.Black();
-            //c.position.y += 0.1; // reset to unpressed
-          });
+              //c.material.emissiveColor = active ? BABYLON.Color3.Teal() : BABYLON.Color3.Black();
+              if (active) {
+                c.scaling = new BABYLON.Vector3(0.6, 0.6, 0.6);
+                c.renderOutline = true;
+                c.outlineColor = BABYLON.Color3.Red();
+                c.outlineWidth = 0.02;
+              } else {
+                c.scaling = new BABYLON.Vector3(0.577, 0.577, 0.577);
+                c.renderOutline = false;
+              }
+            });
 
-          // 🎯 Highlight clicked cube
-          //cube.material.emissiveColor = BABYLON.Color3.Teal();
-          cube.position.y += 0.1;
+          
+          cube.position.y += 0.2;
 
           // 🧼 Handle tag filtering
-          if (tag && taggedGroups[tag]) {
-            filterByTag(tag);
-          }
+          filterProjects(projectEmpties, selectedTechTags, selectedSkillTags);
         })
       );
     });
@@ -190,7 +195,8 @@
 
 
       // Show all by default
-      filterByTag("all");
+      //filterByTag("all");
+      filterProjects(projectEmpties, selectedTechTags, selectedSkillTags);
     });
 
 
@@ -198,7 +204,7 @@
 
 
 
-    setupInputControls(scene, camera, canvas, { min: -16, max: 16 });
+    setupInputControls(scene, camera, canvas, { min: -25, max: 5 });
 
 
 

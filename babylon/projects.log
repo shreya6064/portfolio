@@ -209,7 +209,7 @@ Exporter version: 3.3.1, Blender version: 3.6.1
 		num uvs2           :  0
 		num colors         :  0
 		num triangles      :  15068
-	processing begun of node:  Empty_Erosion.001
+	processing begun of node:  Empty_RayTracer
 	processing begun of mesh:  Plane.006
 		processing begun of material:  Shelves
 		registered as also a user of material:  Shelves
@@ -241,7 +241,167 @@ Exporter version: 3.3.1, Blender version: 3.6.1
 		num uvs2           :  0
 		num colors         :  0
 		num triangles      :  13859
-	processing begun of mesh:  Cube_tag_blender
+	processing begun of node:  Empty_Creativity
+	processing begun of mesh:  Plane.007
+		processing begun of material:  Shelves
+		registered as also a user of material:  Shelves
+		Custom split normals with tangents being used
+		num positions      :  271
+		num normals        :  271
+		num tangents       :  1084
+		num uvs            :  542
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  108
+	processing begun of mesh:  text.012
+		processing begun of material:  text_main
+		registered as also a user of material:  text_main
+		num positions      :  681
+		num normals        :  681
+		num tangents       :  0
+		num uvs            :  0
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  649
+	processing begun of mesh:  text.013
+		processing begun of material:  text_main
+		registered as also a user of material:  text_main
+		num positions      :  11863
+		num normals        :  11863
+		num tangents       :  0
+		num uvs            :  0
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  11703
+	processing begun of node:  Empty_VJTI
+	processing begun of mesh:  Plane.008
+		processing begun of material:  Shelves
+		registered as also a user of material:  Shelves
+		Custom split normals with tangents being used
+		num positions      :  271
+		num normals        :  271
+		num tangents       :  1084
+		num uvs            :  542
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  108
+	processing begun of mesh:  text.014
+		processing begun of material:  text_main
+		registered as also a user of material:  text_main
+		num positions      :  1117
+		num normals        :  1117
+		num tangents       :  0
+		num uvs            :  0
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  1087
+	processing begun of mesh:  text.015
+		processing begun of material:  text_main
+		registered as also a user of material:  text_main
+		num positions      :  12905
+		num normals        :  12905
+		num tangents       :  0
+		num uvs            :  0
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  12769
+	processing begun of node:  Empty_Skylei
+	processing begun of mesh:  Plane.009
+		processing begun of material:  Shelves
+		registered as also a user of material:  Shelves
+		Custom split normals with tangents being used
+		num positions      :  271
+		num normals        :  271
+		num tangents       :  1084
+		num uvs            :  542
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  108
+	processing begun of mesh:  text.016
+		processing begun of material:  text_main
+		registered as also a user of material:  text_main
+		num positions      :  999
+		num normals        :  999
+		num tangents       :  0
+		num uvs            :  0
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  963
+	processing begun of mesh:  text.017
+		processing begun of material:  text_main
+		registered as also a user of material:  text_main
+		num positions      :  13763
+		num normals        :  13763
+		num tangents       :  0
+		num uvs            :  0
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  13609
+	processing begun of node:  Empty_PCOS
+	processing begun of mesh:  Plane.010
+		processing begun of material:  Shelves
+		registered as also a user of material:  Shelves
+		Custom split normals with tangents being used
+		num positions      :  271
+		num normals        :  271
+		num tangents       :  1084
+		num uvs            :  542
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  108
+	processing begun of mesh:  text.018
+		processing begun of material:  text_main
+		registered as also a user of material:  text_main
+		num positions      :  901
+		num normals        :  901
+		num tangents       :  0
+		num uvs            :  0
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  875
+	processing begun of mesh:  text.019
+		processing begun of material:  text_main
+		registered as also a user of material:  text_main
+		num positions      :  14429
+		num normals        :  14429
+		num tangents       :  0
+		num uvs            :  0
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  14301
+	processing begun of node:  Empty_FaceMask
+	processing begun of mesh:  Plane.011
+		processing begun of material:  Shelves
+		registered as also a user of material:  Shelves
+		Custom split normals with tangents being used
+		num positions      :  271
+		num normals        :  271
+		num tangents       :  1084
+		num uvs            :  542
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  108
+	processing begun of mesh:  text.020
+		processing begun of material:  text_main
+		registered as also a user of material:  text_main
+		num positions      :  1156
+		num normals        :  1156
+		num tangents       :  0
+		num uvs            :  0
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  1108
+	processing begun of mesh:  text.021
+		processing begun of material:  text_main
+		registered as also a user of material:  text_main
+		num positions      :  12613
+		num normals        :  12613
+		num tangents       :  0
+		num uvs            :  0
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  12467
+	processing begun of mesh:  Cube_tag_blender_tech
 		processing begun of material:  blender
 			processing texture blender_tex
 		Custom split normals with tangents being used
@@ -252,7 +412,7 @@ Exporter version: 3.3.1, Blender version: 3.6.1
 		num uvs2           :  0
 		num colors         :  0
 		num triangles      :  188
-	processing begun of mesh:  Cube_tag_C
+	processing begun of mesh:  Cube_tag_c#_tech
 		processing begun of material:  csharp
 			processing texture csharp_tex
 		Custom split normals with tangents being used
@@ -286,8 +446,23 @@ Exporter version: 3.3.1, Blender version: 3.6.1
 	writing mesh:  Plane.006
 	writing mesh:  text.010
 	writing mesh:  text.011
-	writing mesh:  Cube_tag_blender
-	writing mesh:  Cube_tag_C
+	writing mesh:  Plane.007
+	writing mesh:  text.012
+	writing mesh:  text.013
+	writing mesh:  Plane.008
+	writing mesh:  text.014
+	writing mesh:  text.015
+	writing mesh:  Plane.009
+	writing mesh:  text.016
+	writing mesh:  text.017
+	writing mesh:  Plane.010
+	writing mesh:  text.018
+	writing mesh:  text.019
+	writing mesh:  Plane.011
+	writing mesh:  text.020
+	writing mesh:  text.021
+	writing mesh:  Cube_tag_blender_tech
+	writing mesh:  Cube_tag_c#_tech
 ========= Writing of JSON file completed =========
 ========= end of processing =========
-elapsed time:  0 min, 3.045 secs
+elapsed time:  0 min, 7.9803 secs

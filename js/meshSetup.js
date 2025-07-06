@@ -1,9 +1,12 @@
 export async function loadMeshes(scene, babylonFile) {
     const result = await BABYLON.SceneLoader.ImportMeshAsync("", "./babylon/", babylonFile, scene);
     const dragableMeshes = [];
-    const taggedGroups = {};
+    //const taggedGroups = {};
     //select the cubes that act as tags!
     const tagCubes = [];
+
+    const techTagsMap = {};
+    const skillTagsMap = {};
     const projectEmpties = [];
 
     result.meshes.forEach(mesh => {
@@ -39,19 +42,39 @@ export async function loadMeshes(scene, babylonFile) {
 
 
 
-        if (mesh.name.startsWith("Empty") && mesh.metadata?.tags) {
+        if (mesh.name.startsWith("Empty")) {
             projectEmpties.push(mesh);
 
-            const rawTagString = mesh.metadata.tags.replace(/[{}]/g, "");
-            const tags = rawTagString.split(',').map(t => t.trim().toLowerCase());
-            tags.forEach(tag => {
-                if (!taggedGroups[tag]) taggedGroups[tag] = [];
-                taggedGroups[tag].push(mesh);
-            });
-            }
+            const techTags = (mesh.metadata?.tech || "")
+            .replace(/[{}]/g, "")
+            .split(",").map(t => t.trim().toLowerCase()).filter(Boolean);
+
+            const skillTags = (mesh.metadata?.skills || "")
+            .replace(/[{}]/g, "")
+            .split(",").map(t => t.trim().toLowerCase()).filter(Boolean);
+
+            // Map projects under each tech tag
+            techTags.forEach(tag => {
+                if (!techTagsMap[tag]) techTagsMap[tag] = [];
+                console.log(tag);
+                techTagsMap[tag].push(mesh);
+                });
+
+            // Map projects under each skill tag
+            skillTags.forEach(tag => {
+                if (!skillTagsMap[tag]) skillTagsMap[tag] = [];
+                console.log(tag)
+                skillTagsMap[tag].push(mesh);
+                });
+        }
+
+
+
         });
 
 
     //console.log(taggedGroups);
-    return { dragableMeshes, taggedGroups, tagCubes, projectEmpties };
+    //return { dragableMeshes, taggedGroups, tagCubes, projectEmpties };
+    return { dragableMeshes, tagCubes, projectEmpties, techTagsMap, skillTagsMap };
+
 }
