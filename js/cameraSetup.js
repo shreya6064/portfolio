@@ -27,7 +27,7 @@ export function setupCamera(scene, canvas) {
   0,
   Math.PI / 2,
   10,
-  new BABYLON.Vector3(40.0, 5.0, 0.0),
+  new BABYLON.Vector3(50.0, 5.0, 0.0),
   scene
 );
 

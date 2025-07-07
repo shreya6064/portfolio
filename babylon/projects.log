@@ -400,6 +400,26 @@ Exporter version: 3.3.1, Blender version: 3.6.1
 		num uvs2           :  0
 		num colors         :  0
 		num triangles      :  12467
+	processing begun of mesh:  demo2
+		processing begun of material:  demo2
+			processing texture demo2
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
+	processing begun of mesh:  demo4
+		processing begun of material:  demo4
+			processing texture demo4
+		num positions      :  4
+		num normals        :  4
+		num tangents       :  0
+		num uvs            :  8
+		num uvs2           :  0
+		num colors         :  0
+		num triangles      :  2
 	processing begun of mesh:  Cube_tag_blender_tech.001
 		processing begun of material:  blender
 			processing texture blender_tex
@@ -437,10 +457,10 @@ Exporter version: 3.3.1, Blender version: 3.6.1
 		processing begun of material:  blender.001
 			processing texture blender_tex
 		Custom split normals with tangents being used
-		num positions      :  219
-		num normals        :  219
-		num tangents       :  876
-		num uvs            :  438
+		num positions      :  218
+		num normals        :  218
+		num tangents       :  872
+		num uvs            :  436
 		num uvs2           :  0
 		num colors         :  0
 		num triangles      :  188
@@ -448,10 +468,10 @@ Exporter version: 3.3.1, Blender version: 3.6.1
 		processing begun of material:  bjs
 			processing texture bhjs_tex
 		Custom split normals with tangents being used
-		num positions      :  219
-		num normals        :  219
-		num tangents       :  876
-		num uvs            :  438
+		num positions      :  218
+		num normals        :  218
+		num tangents       :  872
+		num uvs            :  436
 		num uvs2           :  0
 		num colors         :  0
 		num triangles      :  188
@@ -459,10 +479,10 @@ Exporter version: 3.3.1, Blender version: 3.6.1
 		processing begun of material:  csharp.001
 			processing texture csharp_tex
 		Custom split normals with tangents being used
-		num positions      :  219
-		num normals        :  219
-		num tangents       :  876
-		num uvs            :  438
+		num positions      :  218
+		num normals        :  218
+		num tangents       :  872
+		num uvs            :  436
 		num uvs2           :  0
 		num colors         :  0
 		num triangles      :  188
@@ -470,10 +490,10 @@ Exporter version: 3.3.1, Blender version: 3.6.1
 		processing begun of material:  py
 			processing texture py_tex
 		Custom split normals with tangents being used
-		num positions      :  312
-		num normals        :  312
-		num tangents       :  1248
-		num uvs            :  624
+		num positions      :  302
+		num normals        :  302
+		num tangents       :  1208
+		num uvs            :  604
 		num uvs2           :  0
 		num colors         :  0
 		num triangles      :  188
@@ -481,10 +501,10 @@ Exporter version: 3.3.1, Blender version: 3.6.1
 		processing begun of material:  js
 			processing texture js_tex
 		Custom split normals with tangents being used
-		num positions      :  219
-		num normals        :  219
-		num tangents       :  876
-		num uvs            :  438
+		num positions      :  218
+		num normals        :  218
+		num tangents       :  872
+		num uvs            :  436
 		num uvs2           :  0
 		num colors         :  0
 		num triangles      :  188
@@ -493,12 +513,12 @@ Exporter version: 3.3.1, Blender version: 3.6.1
 			WARNING: unsupported node type(ShaderNodeBump) will trigger baking
 			processing texture unity_tex
 			processing texture unity_tex
-			bake time:  0 min, 0.009 secs
+			bake time:  0 min, 0.003 secs
 		Custom split normals with tangents being used
-		num positions      :  219
-		num normals        :  219
-		num tangents       :  876
-		num uvs            :  438
+		num positions      :  218
+		num normals        :  218
+		num tangents       :  872
+		num uvs            :  436
 		num uvs2           :  0
 		num colors         :  0
 		num triangles      :  188
@@ -506,10 +526,10 @@ Exporter version: 3.3.1, Blender version: 3.6.1
 		processing begun of material:  java
 			processing texture java_tex
 		Custom split normals with tangents being used
-		num positions      :  219
-		num normals        :  219
-		num tangents       :  876
-		num uvs            :  438
+		num positions      :  218
+		num normals        :  218
+		num tangents       :  872
+		num uvs            :  436
 		num uvs2           :  0
 		num colors         :  0
 		num triangles      :  188
@@ -517,10 +537,10 @@ Exporter version: 3.3.1, Blender version: 3.6.1
 		processing begun of material:  substance
 			processing texture sd_tex
 		Custom split normals with tangents being used
-		num positions      :  219
-		num normals        :  219
-		num tangents       :  876
-		num uvs            :  438
+		num positions      :  218
+		num normals        :  218
+		num tangents       :  872
+		num uvs            :  436
 		num uvs2           :  0
 		num colors         :  0
 		num triangles      :  188
@@ -528,10 +548,10 @@ Exporter version: 3.3.1, Blender version: 3.6.1
 		processing begun of material:  ts
 			processing texture ts_tex
 		Custom split normals with tangents being used
-		num positions      :  219
-		num normals        :  219
-		num tangents       :  876
-		num uvs            :  438
+		num positions      :  218
+		num normals        :  218
+		num tangents       :  872
+		num uvs            :  436
 		num uvs2           :  0
 		num colors         :  0
 		num triangles      :  188
@@ -539,10 +559,10 @@ Exporter version: 3.3.1, Blender version: 3.6.1
 		processing begun of material:  mongo
 			processing texture mongo_tex
 		Custom split normals with tangents being used
-		num positions      :  219
-		num normals        :  219
-		num tangents       :  876
-		num uvs            :  438
+		num positions      :  218
+		num normals        :  218
+		num tangents       :  872
+		num uvs            :  436
 		num uvs2           :  0
 		num colors         :  0
 		num triangles      :  188
@@ -550,10 +570,10 @@ Exporter version: 3.3.1, Blender version: 3.6.1
 		processing begun of material:  react
 			processing texture react_tex
 		Custom split normals with tangents being used
-		num positions      :  219
-		num normals        :  219
-		num tangents       :  876
-		num uvs            :  438
+		num positions      :  218
+		num normals        :  218
+		num tangents       :  872
+		num uvs            :  436
 		num uvs2           :  0
 		num colors         :  0
 		num triangles      :  188
@@ -561,10 +581,10 @@ Exporter version: 3.3.1, Blender version: 3.6.1
 		processing begun of material:  pytorch
 			processing texture pytorch_tex
 		Custom split normals with tangents being used
-		num positions      :  219
-		num normals        :  219
-		num tangents       :  876
-		num uvs            :  438
+		num positions      :  218
+		num normals        :  218
+		num tangents       :  872
+		num uvs            :  436
 		num uvs2           :  0
 		num colors         :  0
 		num triangles      :  188
@@ -572,10 +592,10 @@ Exporter version: 3.3.1, Blender version: 3.6.1
 		processing begun of material:  pandas
 			processing texture pandas_tex
 		Custom split normals with tangents being used
-		num positions      :  219
-		num normals        :  219
-		num tangents       :  876
-		num uvs            :  438
+		num positions      :  218
+		num normals        :  218
+		num tangents       :  872
+		num uvs            :  436
 		num uvs2           :  0
 		num colors         :  0
 		num triangles      :  188
@@ -583,10 +603,10 @@ Exporter version: 3.3.1, Blender version: 3.6.1
 		processing begun of material:  flask
 			processing texture flask_tex
 		Custom split normals with tangents being used
-		num positions      :  219
-		num normals        :  219
-		num tangents       :  876
-		num uvs            :  438
+		num positions      :  218
+		num normals        :  218
+		num tangents       :  872
+		num uvs            :  436
 		num uvs2           :  0
 		num colors         :  0
 		num triangles      :  188
@@ -594,10 +614,10 @@ Exporter version: 3.3.1, Blender version: 3.6.1
 		processing begun of material:  tf
 			processing texture tf_tex
 		Custom split normals with tangents being used
-		num positions      :  219
-		num normals        :  219
-		num tangents       :  876
-		num uvs            :  438
+		num positions      :  218
+		num normals        :  218
+		num tangents       :  872
+		num uvs            :  436
 		num uvs2           :  0
 		num colors         :  0
 		num triangles      :  188
@@ -605,10 +625,10 @@ Exporter version: 3.3.1, Blender version: 3.6.1
 		processing begun of material:  processing
 			processing texture processing_tex
 		Custom split normals with tangents being used
-		num positions      :  216
-		num normals        :  216
-		num tangents       :  864
-		num uvs            :  432
+		num positions      :  218
+		num normals        :  218
+		num tangents       :  872
+		num uvs            :  436
 		num uvs2           :  0
 		num colors         :  0
 		num triangles      :  188
@@ -679,6 +699,8 @@ Exporter version: 3.3.1, Blender version: 3.6.1
 	writing mesh:  Plane.011
 	writing mesh:  text.020
 	writing mesh:  text.021
+	writing mesh:  demo2
+	writing mesh:  demo4
 	writing mesh:  Cube_tag_blender_tech.001
 	writing mesh:  Cube_tag_c#_tech.001
 	writing mesh:  Cube_tag_meshroom_tech
@@ -703,4 +725,4 @@ Exporter version: 3.3.1, Blender version: 3.6.1
 	writing mesh:  wall.004
 ========= Writing of JSON file completed =========
 ========= end of processing =========
-elapsed time:  0 min, 3.8344 secs
+elapsed time:  0 min, 4.7022 secs

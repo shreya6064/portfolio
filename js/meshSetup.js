@@ -35,7 +35,7 @@ export async function loadMeshes(scene, babylonFile) {
             mesh.physicsImpostor = new BABYLON.PhysicsImpostor(
                 mesh,
                 BABYLON.PhysicsImpostor.BoxImpostor,
-                { mass: 0, friction: 0.5, restitution: 0.7 },
+                { mass: 0, friction: 0.7, restitution: 0.1 },
                 scene
             );
         }
@@ -72,6 +72,25 @@ export async function loadMeshes(scene, babylonFile) {
 
         });
 
+    // After result.meshes.forEach(...)
+        /*
+    tagCubes.forEach(cube => {
+    const tag = cube.name.split("_")[2]?.toLowerCase();
+    const type = cube.name.split("_")[3]?.toLowerCase();
+
+    let frequency = 0;
+
+    if (type === "tech") {
+        frequency = techTagsMap[tag]?.length || 0;
+    } else if (type === "skill") {
+        frequency = skillTagsMap[tag]?.length || 0;
+    }
+
+    // Scale between 0.5 and 1.2 based on frequency (adjust as needed)
+    const scaleFactor = BABYLON.Scalar.Clamp(0.4 + frequency * 0.2, 1.0, 2.0);
+    cube.scaling = new BABYLON.Vector3(scaleFactor, scaleFactor, scaleFactor);
+    });
+    */
 
     //console.log(taggedGroups);
     //return { dragableMeshes, taggedGroups, tagCubes, projectEmpties };

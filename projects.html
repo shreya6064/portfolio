@@ -87,9 +87,13 @@
         const tech = (project.metadata?.tech || "").replace(/[{}]/g, '').split(',').map(t => t.trim().toLowerCase());
         const skill = (project.metadata?.skills || "").replace(/[{}]/g, '').split(',').map(t => t.trim().toLowerCase());
 
-        //const techMatch = techTags.size === 0 || tech.some(tag => techTags.has(tag));
-        const techMatch = [...techTags].every(tag => tech.includes(tag));
-        const skillMatch = [...skillTags].every(tag => skill.includes(tag));
+        //logical and
+        //const techMatch = [...techTags].every(tag => tech.includes(tag));
+        //const skillMatch = [...skillTags].every(tag => skill.includes(tag));
+
+        //logical or
+        const techMatch = techTags.size === 0 || tech.some(tag => techTags.has(tag));
+        const skillMatch = skillTags.size === 0 || skill.some(tag => skillTags.has(tag));
 
 
         return techMatch && skillMatch;
@@ -120,6 +124,21 @@
 
       //Object.values(taggedGroups).flat().forEach(mesh => mesh.setEnabled(false));
       projectEmpties.forEach(mesh => mesh.setEnabled(false));
+
+      /*
+      const tagParent = scene.getMeshByName("filter"); // or whatever your group is called
+      const selectorRoot = new BABYLON.TransformNode("selectorRoot", scene);
+      scene.onBeforeRenderObservable.add(() => {
+        const cam = scene.activeCamera;
+        console.log(selectorRoot.position);
+        selectorRoot.position = cam.position.add(new BABYLON.Vector3(-60.01, 0, 0)); // or whatever offset works best
+      });
+      console.log(selectorRoot.position);
+      //tagParent.parent = selectorRoot;
+      */
+
+
+
 
 
 
@@ -171,11 +190,13 @@
               //c.material.emissiveColor = active ? BABYLON.Color3.Teal() : BABYLON.Color3.Black();
               if (active) {
                 c.scaling = new BABYLON.Vector3(1.05, 1.05, 1.05);
+                //c.scaling = c.scaling.multiplyByFloats(1.05, 1.05, 1.05);
                 c.renderOutline = true;
                 c.outlineColor = BABYLON.Color3.Red();
                 c.outlineWidth = 0.02;
               } else {
                 c.scaling = new BABYLON.Vector3(1.0,1.0,1.0);
+                //c.scaling = c.scaling.scale(1 / 1.05);
                 c.renderOutline = false;
               }
             });

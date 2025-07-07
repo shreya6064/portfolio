@@ -23,67 +23,63 @@ Exporter version: 3.3.1, Blender version: 3.6.1
 		num triangles      :  2
 	processing begun of mesh:  text
 		processing begun of material:  text_main
-		num positions      :  3212
-		num normals        :  3212
+		num positions      :  167
+		num normals        :  167
 		num tangents       :  0
 		num uvs            :  0
 		num uvs2           :  0
 		num colors         :  0
-		num triangles      :  3197
+		num triangles      :  155
 	processing begun of mesh:  text.001
 		processing begun of material:  text_main
 		registered as also a user of material:  text_main
-		num positions      :  4958
-		num normals        :  4958
+		num positions      :  1647
+		num normals        :  1647
 		num tangents       :  0
 		num uvs            :  0
 		num uvs2           :  0
 		num colors         :  0
-		num triangles      :  4946
-		WARNING: # of 0 area faces found:  2
+		num triangles      :  1633
 	processing begun of mesh:  text.002
 		processing begun of material:  text_main
 		registered as also a user of material:  text_main
-		num positions      :  5340
-		num normals        :  5340
+		num positions      :  1593
+		num normals        :  1593
 		num tangents       :  0
 		num uvs            :  0
 		num uvs2           :  0
 		num colors         :  0
-		num triangles      :  5320
+		num triangles      :  1573
 	processing begun of mesh:  text.003
 		processing begun of material:  text_main
 		registered as also a user of material:  text_main
-		num positions      :  28084
-		num normals        :  28084
+		num positions      :  10106
+		num normals        :  10106
 		num tangents       :  0
 		num uvs            :  0
 		num uvs2           :  0
 		num colors         :  0
-		num triangles      :  27981
-		WARNING: # of 0 area faces found:  14
+		num triangles      :  10004
 	processing begun of mesh:  text.004
 		processing begun of material:  text_main
 		registered as also a user of material:  text_main
-		num positions      :  16586
-		num normals        :  16586
+		num positions      :  5514
+		num normals        :  5514
 		num tangents       :  0
 		num uvs            :  0
 		num uvs2           :  0
 		num colors         :  0
-		num triangles      :  16541
-		WARNING: # of 0 area faces found:  4
+		num triangles      :  5462
 	processing begun of mesh:  text.005
 		processing begun of material:  text_main
 		registered as also a user of material:  text_main
-		num positions      :  14755
-		num normals        :  14755
+		num positions      :  5068
+		num normals        :  5068
 		num tangents       :  0
 		num uvs            :  0
 		num uvs2           :  0
 		num colors         :  0
-		num triangles      :  14705
-		WARNING: # of 0 area faces found:  15
+		num triangles      :  5016
 	processing begun of mesh:  Plane.001
 		processing begun of material:  Shelves
 		Custom split normals with tangents being used
@@ -116,7 +112,7 @@ Exporter version: 3.3.1, Blender version: 3.6.1
 		num colors         :  0
 		num triangles      :  148
 	processing begun of mesh:  Plane.003
-		processing begun of material:  White
+		processing begun of material:  idek
 		Custom split normals with tangents being used
 		num positions      :  286
 		num normals        :  286
@@ -183,4 +179,4 @@ Exporter version: 3.3.1, Blender version: 3.6.1
 	writing mesh:  plant_growing_workbench_tv
 ========= Writing of JSON file completed =========
 ========= end of processing =========
-elapsed time:  0 min, 3.509 secs
+elapsed time:  0 min, 0.6297 secs

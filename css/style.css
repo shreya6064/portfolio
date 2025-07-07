@@ -121,6 +121,7 @@ html, body {
   canvas#canvas {
     width: 100%;
     height: 100%;
+    /*V IMP: CANVAS WIDTH*/
     max-width: 1200px;  /* LIMIT WIDTH */
     aspect-ratio: 16 / 9; /* maintain ratio */
     background: transparent;
