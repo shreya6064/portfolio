@@ -61,7 +61,7 @@
     setupLights(scene);
 
 
-    
+    const cubes1 = await loadMeshes(scene, "base.babylon");
 
     loadMeshes(scene, "home.babylon").then(({ dragableMeshes }) => {
       setupInteractions(dragableMeshes, scene);

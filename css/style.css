@@ -1,9 +1,23 @@
+@font-face {
+  font-family: 'Lemon Milk';
+  src: url('fonts/LEMONMILK-Regular.otf') format('opentype');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: 'Twentieth Century';
+  src: url('fonts/TCM_____.TTF') format('truetype');
+  font-weight: normal;
+}
+
+
+
 html, body {
     margin: 0;
     padding: 0;
     height: 100%;
     font-family: sans-serif;
-    overflow: hidden;
+    overflow: auto;
     display: flex;
     flex-direction: column;
   }
@@ -11,7 +25,7 @@ html, body {
   header, footer {
     background: #1a1a1a; /* light grey */
     color: #ffffff;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Twentieth Century', sans-serif;
     z-index: 10;
   }
 
@@ -24,7 +38,7 @@ html, body {
     align-items: center;
     
     padding: 1rem 2rem;
-    font-family: 'Playfair Display', serif;
+    font-family: 'Twentieth Century', sans-serif;
     z-index: 10;
     
   }
@@ -100,11 +114,12 @@ html, body {
     /*flex: 1;
     position: relative;
     overflow: hidden;*/
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: calc(100vh - HEADER_HEIGHT - FOOTER_HEIGHT); /* Adjust if you have fixed header/footer */
+    
     background: #272727; /* optional */
   }
 

@@ -30,16 +30,6 @@ Exporter version: 3.3.1, Blender version: 3.6.1
 		num uvs2           :  0
 		num colors         :  0
 		num triangles      :  12
-	processing begun of mesh:  wall.001
-		processing begun of material:  idek.001
-		Custom split normals with tangents being used
-		num positions      :  104
-		num normals        :  104
-		num tangents       :  416
-		num uvs            :  208
-		num uvs2           :  0
-		num colors         :  0
-		num triangles      :  52
 	processing begun of node:  Empty_SwiftStep
 	processing begun of mesh:  IMG_4061
 		processing begun of material:  IMG_4061
@@ -513,7 +503,7 @@ Exporter version: 3.3.1, Blender version: 3.6.1
 			WARNING: unsupported node type(ShaderNodeBump) will trigger baking
 			processing texture unity_tex
 			processing texture unity_tex
-			bake time:  0 min, 0.003 secs
+			bake time:  0 min, 0.0065 secs
 		Custom split normals with tangents being used
 		num positions      :  218
 		num normals        :  218
@@ -664,7 +654,6 @@ Exporter version: 3.3.1, Blender version: 3.6.1
 ========= Writing of JSON file started =========
 	writing mesh:  text
 	writing mesh:  Plane.003
-	writing mesh:  wall.001
 	writing mesh:  IMG_4061
 	writing mesh:  IMG_4066
 	writing mesh:  R7ML5376
@@ -725,4 +714,4 @@ Exporter version: 3.3.1, Blender version: 3.6.1
 	writing mesh:  wall.004
 ========= Writing of JSON file completed =========
 ========= end of processing =========
-elapsed time:  0 min, 4.7022 secs
+elapsed time:  0 min, 5.1673 secs

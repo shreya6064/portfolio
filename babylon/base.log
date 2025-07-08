@@ -12,18 +12,18 @@ Exporter version: 3.3.1, Blender version: 3.6.1
 		Texture directory   :  C:\Work\Projects_2024\Portfolio_Website_Oct2024\babylon\
 	Python World class constructor completed
 	WARNING: No active camera has been assigned, or is not in a currently enabled collection
-	processing begun of mesh:  wall
-		processing begun of material:  idek
+	processing begun of mesh:  wall.001
+		processing begun of material:  idek.001
 		Custom split normals with tangents being used
-		num positions      :  580
-		num normals        :  580
-		num tangents       :  2320
-		num uvs            :  1160
+		num positions      :  106
+		num normals        :  106
+		num tangents       :  424
+		num uvs            :  212
 		num uvs2           :  0
 		num colors         :  0
-		num triangles      :  572
+		num triangles      :  52
 ========= Writing of JSON file started =========
-	writing mesh:  wall
+	writing mesh:  wall.001
 ========= Writing of JSON file completed =========
 ========= end of processing =========
-elapsed time:  0 min, 0.072 secs
+elapsed time:  0 min, 0.008 secs
