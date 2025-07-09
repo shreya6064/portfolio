@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Procedural Systems</title>
+  <title>About</title>
   <link rel="stylesheet" href="./css/style.css" />
 
   <!-- BabylonJS -->
@@ -80,7 +80,7 @@
         async function loadAndSetupScene() {
             //await artworksLoaded; 
             const cubes1 = await loadMeshes(scene, "base.babylon");
-            const cubes = await loadMeshes(scene, "procedural_systems.babylon");  // Load main scene
+            const cubes = await loadMeshes(scene, "about.babylon");  // Load main scene
             setupInteractions(cubes, scene);
 
             
@@ -96,7 +96,7 @@
 
 
 
-        setupInputControls(scene, camera, canvas, { min: -12, max: 5 });
+        setupInputControls(scene, camera, canvas, { min: -3, max: 5 });
 
         engine.runRenderLoop(() => {
             scene.render();
